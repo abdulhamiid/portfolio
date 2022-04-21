@@ -14,12 +14,20 @@
     width: 90%;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   /* header consist of the header-text and the nav */
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 15px auto;
+  }
+
+  .header h3 a {
+    color: #28352f;
   }
 
   /* hamburger container */
@@ -45,6 +53,10 @@
   }
 
   #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -64,6 +76,17 @@
     margin: 30px auto;
     font-size: 25px;
     color: #172b4d;
+  }
+
+  #social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #social-media li {
+    list-style: none;
+    margin: 0 10px;
   }
 
   #img-icon {
