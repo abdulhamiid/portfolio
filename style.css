@@ -11,11 +11,90 @@
 
   .container {
     margin: auto;
-    width: 90%;
+    width: 85%;
+    text-align: center;
   }
 
   a {
     text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .stretch {
+    width: 100%;
+  }
+
+  .green {
+    color: #36b37e;
+  }
+
+  /* button */
+  .btn-bg-green {
+    background-color: #36b37f;
+    padding: 13px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    box-shadow: 2px 2px 10px 3px #c5e9da;
+  }
+
+  button:active {
+    background-color: #008552;
+  }
+
+  .btn-bg-green:active {
+    opacity: 9;
+  }
+
+  /* light background-color for buttons */
+  .bg-light {
+    background-color: #fff;
+  }
+
+  /* ash background-color for buttons */
+  .bg-ash {
+    background-color: #ebf0ee;
+  }
+
+  /* flex in column direction */
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* flex in row direction */
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* inline list padding */
+  .li-padding {
+    margin: 8px 3px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  /* display grid in column direction */
+  .column-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   /* header consist of the header-text and the nav */
@@ -47,49 +126,109 @@
   }
 
   #main-content {
+    grid-gap: 30px 0;
+  }
+
+  #profile {
+    padding-top: 10%;
     background-image: url(img/header-illsutration-mobile@2x.png);
     background-position: center center;
     background-size: cover;
   }
 
-  #about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 10%;
+  h1,
+  h2 {
+    color: #172b4d;
   }
 
   h1 {
     font-size: 45px;
-    color: #172b4d;
+  }
+
+  h2 {
+    font-size: 43px;
   }
 
   #h1-inner-text {
     color: #36b37e;
   }
 
-  #about-paragraph {
-    margin: 30px auto;
+  /* medium head-text font-size */
+  .font-md {
+    color: #3a4a42;
+    font-size: 30px;
+  }
+
+  /* large paragraph display */
+  .p-lg {
+    margin: 20px auto;
     font-size: 25px;
     color: #172b4d;
   }
 
-  #social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* social media platforms icons */
+  .social-media {
+    margin-top: 30px;
   }
 
-  #social-media li {
-    list-style: none;
+  .social-media li {
     margin: 0 10px;
   }
 
+  /* dropdown icon */
   #img-icon {
     margin-top: 70px;
+  }
+
+  /* project-section */
+  hr {
+    width: 45px;
+    height: 3px;
+    background-color: #36b37e;
+    margin: 20px auto;
+  }
+
+  /* individual-project container */
+  #work-section {
+    grid-gap: 20px 0;
+  }
+
+  .project-list {
+    height: 474px;
+    background-color: #ebf0ee;
+    border: 1px solid #d0d9d4;
+    border-radius: 5px;
+  }
+
+  /* project info container */
+  .project-about {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    align-self: flex-end;
+    width: 100%;
+  }
+
+  .about-card {
+    width: 100%;
+    background-color: #ebf0ee;
+    border-radius: 7px;
+    border: 1px solid #c1c7d0;
+    padding: 40px 0;
+    margin-top: 30px;
+  }
+
+  .about-card ul {
+    flex-wrap: wrap;
+  }
+
+  .div {
+    background-image: url(img/illustration-about-me-mobile.png), url(img/Mask-Group.png);
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+  }
+
+  .abt-me {
+    padding-top: 35px;
   }
 }
