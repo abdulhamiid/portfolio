@@ -182,10 +182,13 @@
 
   /* project-section */
   hr {
-    width: 45px;
     height: 3px;
-    background-color: #36b37e;
     margin: 20px auto;
+  }
+
+  .hr-green {
+    width: 45px;
+    background-color: #36b37e;
   }
 
   /* individual-project container */
@@ -230,5 +233,67 @@
 
   .abt-me {
     padding-top: 35px;
+  }
+
+  /* contact info */
+  .contact-me {
+    background-image: url(img/Frame.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  .contact-me p {
+    color: #172b4d;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  input,
+  textarea {
+    padding: 12px;
+    font-size: 90%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    border: 1px solid #d0d9d4;
+  }
+
+  textarea {
+    font-family: inherit;
+    max-width: 100%;
+    min-width: 100%;
+    border: 1px solid #36b37f;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  textarea::placeholder {
+    color: #000;
+  }
+
+  footer {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .email-link {
+    color: #42526e;
+  }
+
+  .hr-dark {
+    margin-top: 80px;
+    width: 35%;
+    background-color: #0d151e;
   }
 }
