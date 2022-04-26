@@ -231,4 +231,52 @@
   .abt-me {
     padding-top: 35px;
   }
+
+  /* contact info */
+
+  .contact-me p {
+    color: #172b4d;
+    font-size: 45px;
+  }
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  input,
+  textarea {
+    padding: 12px;
+    font-size: 90%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    border: 1px solid #d0d9d4;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  textarea {
+    font-family: inherit;
+    max-width: 100%;
+    min-width: 100%;
+    border: 1px solid #36b37f;
+  }
+  
+  textarea::placeholder{
+    color: #000;
+  }
+
+  footer {
+    margin: 30px;
+    font-size: 20px;
+  }
+
+  footer a {
+    color: #42526e;
+  }
 }
