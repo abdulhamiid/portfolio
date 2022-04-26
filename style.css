@@ -182,10 +182,13 @@
 
   /* project-section */
   hr {
-    width: 45px;
     height: 3px;
-    background-color: #36b37e;
     margin: 20px auto;
+  }
+
+  .hr-green {
+    width: 45px;
+    background-color: #36b37e;
   }
 
   /* individual-project container */
@@ -280,11 +283,17 @@
   }
 
   footer {
-    margin: 30px;
+    margin-top: 20px;
     font-size: 20px;
   }
 
   .email-link {
     color: #42526e;
+  }
+
+  .hr-dark {
+    margin-top: 80px;
+    width: 35%;
+    background-color: #0d151e;
   }
 }
