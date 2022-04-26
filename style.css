@@ -234,16 +234,18 @@
 
   /* contact info */
   .contact-me {
-  background-image: url(img/Frame.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
+    background-image: url(img/Frame.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
   }
+
   .contact-me p {
     color: #172b4d;
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 40px;
   }
+
   form {
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -261,19 +263,19 @@
     border: 1px solid #d0d9d4;
   }
 
-  input:focus,
-  textarea:focus {
-    outline: none;
-  }
-
   textarea {
     font-family: inherit;
     max-width: 100%;
     min-width: 100%;
     border: 1px solid #36b37f;
   }
-  
-  textarea::placeholder{
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  textarea::placeholder {
     color: #000;
   }
 
@@ -282,7 +284,7 @@
     font-size: 20px;
   }
 
-  footer a {
+  .email-link {
     color: #42526e;
   }
 }
