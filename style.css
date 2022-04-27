@@ -1,4 +1,5 @@
 /* Design for mobile phones: */
+
 /* global styles */
 * {
   margin: 0;
@@ -215,7 +216,7 @@ hr {
 
 /* project info container */
 .project-about {
-  padding: 20px;
+  padding: 20px 5px;
   background-color: #fff;
   border-radius: 8px;
   align-self: flex-end;
@@ -308,7 +309,7 @@ footer {
   background-color: #0d151e;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   /* Design for desktop: */
   .header {
     justify-content: center;
@@ -324,6 +325,7 @@ footer {
     font-weight: bold;
     padding: 0 20px;
   }
+
   #profile {
     background-image: url(img/Header-llustration-desktop.png);
     background-position: center top;
@@ -363,20 +365,18 @@ footer {
   hr {
     display: none;
   }
-  
+
   .container-grid {
     display: grid;
-    grid-template-columns: 32.5% 32.5% 32.5%;
-    grid-gap: 2.5%;
+    grid-template-columns: 32% 32% 32%;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
     margin: auto;
   }
-  
+
   .project-list {
     width: 100%;
     height: 430px;
-    margin-bottom: 0;
   }
 
   .project-about li {
@@ -387,7 +387,8 @@ footer {
   .div {
     background-image: url(), url(img/illustration-about-me_desktop.png);
   }
-  .div div {
+
+  #my-info {
     width: 60%;
   }
 
@@ -399,5 +400,5 @@ footer {
   #about-section > ul > li {
     height: 250px;
     width: 32%;
-  } 
+  }
 }
