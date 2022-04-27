@@ -210,6 +210,7 @@ hr {
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 /* project info container */
@@ -349,6 +350,39 @@ footer {
     margin-bottom: 40px;
   }
 
+  /* work section */
+  #work-section {
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+
+  #work-section h2 {
+    margin-bottom: 20px;
+  }
+
+  hr {
+    display: none;
+  }
+  
+  .container-grid {
+    display: grid;
+    grid-template-columns: 32.5% 32.5% 32.5%;
+    grid-gap: 2.5%;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .project-list {
+    width: 100%;
+    height: 430px;
+    margin-bottom: 0;
+  }
+
+  .project-about li {
+    font-size: 13px;
+  }
+
   /* about me section background-image */
   .div {
     background-image: url(), url(img/illustration-about-me_desktop.png);
@@ -365,5 +399,5 @@ footer {
   #about-section > ul > li {
     height: 250px;
     width: 32%;
-  }
+  } 
 }
