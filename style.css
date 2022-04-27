@@ -356,4 +356,14 @@ footer {
   .div div {
     width: 60%;
   }
+
+  #about-section > ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #about-section > ul > li {
+    height: 250px;
+    width: 32%;
+  }
 }
