@@ -125,6 +125,10 @@ nav {
   background-color: #28352f;
 }
 
+.nav-links {
+  display: none;
+}
+
 #main-content {
   grid-gap: 30px 0;
 }
@@ -184,6 +188,11 @@ h2 {
 hr {
   height: 3px;
   margin: 20px auto;
+}
+
+.col-span {
+  width: 55%;
+  margin: auto;
 }
 
 .hr-green {
@@ -333,5 +342,18 @@ footer {
 
   #img-icon {
     margin-top: 50px;
+  }
+
+  .nav-links {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  /* about me section background-image */
+  .div {
+    background-image: url(), url(img/illustration-about-me_desktop.png);
+  }
+  .div div {
+    width: 60%;
   }
 }
