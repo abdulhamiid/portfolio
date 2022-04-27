@@ -385,7 +385,8 @@ footer {
 
   /* about me section background-image */
   .div {
-    background-image: url(), url(img/illustration-about-me_desktop.png);
+    background-image: url(img/illustration-about-me-2-desktop.png), url(img/illustration-about-me_desktop.png);
+    background-position: bottom left, top right;
   }
 
   #my-info {
@@ -400,5 +401,6 @@ footer {
   #about-section > ul > li {
     height: 250px;
     width: 32%;
+    font-size: 14px;
   }
 }
