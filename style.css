@@ -172,6 +172,9 @@ h2 {
 }
 
 /* social media platforms icons */
+.social-media-dsk {
+  display: none;
+}
 .social-media {
   margin-top: 30px;
 }
@@ -299,6 +302,11 @@ footer {
   font-size: 20px;
 }
 
+footer .email-link,
+footer .hr {
+  display: block;
+}
+
 .email-link {
   color: #42526e;
 }
@@ -402,5 +410,61 @@ footer {
     height: 250px;
     width: 32%;
     font-size: 14px;
+  }
+
+  /* contact-me section */
+  .contact-me {
+    margin-top: 60px;
+  }
+  .contact-me > div{
+    flex-direction: row;
+  }
+
+  .contact-me > div p {
+    width: 70%;
+    font-size: 27px;
+  }
+
+  /* form */
+  .contact-me form {
+    margin-left: 20px;
+    align-items: flex-start;
+  }
+
+  .contact-me form textarea {
+    resize: none;
+  }
+  
+  .contact-me ul {
+    display: none;
+  }
+
+  /* desktop-social-media links */
+  .social-media {
+    display: none;
+  }
+
+  .social-media-dsk {
+    display: block;
+    display: flex;
+    padding-left: 30px;
+  }
+  .social-media-dsk li {
+    margin: 0 10px;
+  }
+
+  .social-media-dsk {
+    margin: 20px;
+  }
+
+  /* footer */
+  footer {
+    border-top: 1px solid #dfe1e6;
+    margin-top: 150px;
+  }
+
+  footer .email-link,
+  footer .hr {
+    display: none;
   }
 }
