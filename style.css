@@ -321,7 +321,17 @@ footer .hr {
 @media only screen and (min-width: 768px) {
   /* Design for desktop: */
   .header {
+    position: absolute;
     justify-content: center;
+    width: 100%;
+  }
+
+  .header a {
+    color: #172b4d;
+  }
+
+  .header a:active {
+    color: #172b4d;
   }
 
   .hamburger,
@@ -361,7 +371,7 @@ footer .hr {
   #profile {
     background-image: url(img/Header-llustration-desktop.png);
     background-position: center top;
-    height: 100%;
+    height: 650px;
     padding-bottom: 70px;
   }
 
@@ -386,7 +396,7 @@ footer .hr {
 
   /* work section */
   #work-section {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 70px;
   }
 
@@ -438,7 +448,7 @@ footer .hr {
 
   /* contact-me section */
   #contact-me {
-    margin-top: 60px;
+    padding-top: 60px;
     background-image: none;
   }
 
