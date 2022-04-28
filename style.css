@@ -334,6 +334,13 @@ footer .hr {
     padding: 0 20px;
   }
 
+  main {
+    background-image: url(img/main.png), url(img/main-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom right;
+    padding-bottom: 200px;
+  }
+
   #profile {
     background-image: url(img/Header-llustration-desktop.png);
     background-position: center top;
@@ -415,6 +422,7 @@ footer .hr {
   /* contact-me section */
   .contact-me {
     margin-top: 60px;
+    background-image: none;
   }
   .contact-me > div{
     flex-direction: row;
@@ -460,7 +468,6 @@ footer .hr {
   /* footer */
   footer {
     border-top: 1px solid #dfe1e6;
-    margin-top: 150px;
   }
 
   footer .email-link,
