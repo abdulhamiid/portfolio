@@ -338,7 +338,7 @@ footer .hr {
     background-image: url(img/main.png), url(img/main-2.png);
     background-repeat: no-repeat;
     background-position: bottom left, bottom right;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
   }
 
   #profile {
@@ -431,10 +431,19 @@ footer .hr {
   .contact-me > div p {
     width: 70%;
     font-size: 27px;
+    line-height: 1.5;
+    background-image: url(img/illustration-2-contact-form-desktop@2x.png);
+    background-position: bottom;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    padding-bottom: 250px;
+    padding-top: 80px;
+    align-self: flex-end;
   }
 
   /* form */
   .contact-me form {
+    align-self: flex-start;
     margin-left: 20px;
     align-items: flex-start;
   }
