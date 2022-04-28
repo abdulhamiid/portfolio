@@ -2,7 +2,7 @@
 
 # Portfolio Design
 
-> This project is built to create the mobile-version design of my porfolio.
+> This project is a Responsive version of my portfolio design, the website looks good (and readable) on all screens.
 
 
 ## Built With
