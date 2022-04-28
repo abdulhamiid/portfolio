@@ -175,6 +175,7 @@ h2 {
 .social-media-dsk {
   display: none;
 }
+
 .social-media {
   margin-top: 30px;
 }
@@ -251,13 +252,13 @@ hr {
 }
 
 /* contact info */
-.contact-me {
+#contact-me {
   background-image: url(img/Frame.png);
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
-.contact-me p {
+#contact-me > div p {
   color: #172b4d;
   font-size: 45px;
   font-weight: bold;
@@ -302,13 +303,13 @@ footer {
   font-size: 20px;
 }
 
+.email-link {
+  color: #42526e;
+}
+
 footer .email-link,
 footer .hr {
   display: block;
-}
-
-.email-link {
-  color: #42526e;
 }
 
 .hr-dark {
@@ -339,6 +340,22 @@ footer .hr {
     background-repeat: no-repeat;
     background-position: bottom left, bottom right;
     padding-bottom: 50px;
+  }
+
+  /* desktop-social-media links */
+  .social-media {
+    display: none;
+  }
+
+  .social-media-dsk {
+    display: block;
+    display: flex;
+    padding-left: 30px;
+    margin: 20px;
+  }
+
+  .social-media-dsk li {
+    margin: 0 10px;
   }
 
   #profile {
@@ -420,15 +437,16 @@ footer .hr {
   }
 
   /* contact-me section */
-  .contact-me {
+  #contact-me {
     margin-top: 60px;
     background-image: none;
   }
-  .contact-me > div{
+
+  #contact-me > div {
     flex-direction: row;
   }
 
-  .contact-me > div p {
+  #contact-me > div p {
     width: 70%;
     font-size: 27px;
     line-height: 1.5;
@@ -442,36 +460,18 @@ footer .hr {
   }
 
   /* form */
-  .contact-me form {
+  #contact-me form {
     align-self: flex-start;
     margin-left: 20px;
     align-items: flex-start;
   }
 
-  .contact-me form textarea {
+  #contact-me form textarea {
     resize: none;
   }
-  
-  .contact-me ul {
+
+  #contact-me ul {
     display: none;
-  }
-
-  /* desktop-social-media links */
-  .social-media {
-    display: none;
-  }
-
-  .social-media-dsk {
-    display: block;
-    display: flex;
-    padding-left: 30px;
-  }
-  .social-media-dsk li {
-    margin: 0 10px;
-  }
-
-  .social-media-dsk {
-    margin: 20px;
   }
 
   /* footer */
