@@ -55,10 +55,6 @@ button:active {
   background-color: #008552;
 }
 
-.btn-bg-green:active {
-  opacity: 9;
-}
-
 /* light background-color for buttons */
 .bg-light {
   background-color: #fff;
@@ -366,6 +362,11 @@ footer .hr {
     display: flex;
     padding-left: 30px;
     margin: 20px;
+    animation: media1;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
   }
 
   .social-media-dsk li {
@@ -396,6 +397,11 @@ footer .hr {
   .nav-links {
     display: flex;
     margin-bottom: 40px;
+    animation: nav;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
   }
 
   /* work section */
@@ -505,7 +511,7 @@ footer .hr {
     position: relative;
   }
 
-  .about p {
+  #profile > div p {
     animation: ptext;
     animation-duration: 3s;
     position: relative;
@@ -515,8 +521,9 @@ footer .hr {
     0% {
       top: -300px;
     }
+
     100% {
-      top: 0px;
+      top: 0;
     }
   }
 
@@ -524,22 +531,17 @@ footer .hr {
     0% {
       left: -1000px;
     }
+
     100% {
-      left: 0px;
+      left: 0;
     }
-  }
-  .nav-links {
-    animation: nav;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    opacity: 0;
-    animation-fill-mode: forwards;
   }
 
   @keyframes nav {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -552,23 +554,17 @@ footer .hr {
     transition: 0.4s;
   }
 
-  .project-about li:hover,
-  .about-card li:hover {
+  #work-section li:hover,
+  #about-section li:hover {
     margin-bottom: 2px;
     font-weight: 600;
   }
-  .social-media-dsk {
-    animation: media1;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-  }
-  
+
   @keyframes media1 {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -579,4 +575,15 @@ footer .hr {
     transition: 0.5s;
   }
 
+  button:hover {
+    cursor: pointer;
+    color: #008552;
+    background-color: #ebf0ee;
+    transition: 0.4s;
+    border: 1px solid #008552;
+  }
+
+  button:active {
+    background-color: #008552;
+  }
 }
