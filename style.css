@@ -493,4 +493,35 @@ footer .hr {
   footer .hr {
     display: none;
   }
+
+  /* animation */
+  .about h1 {
+    animation: header;
+    animation-duration: 3s;
+    position: relative;
+  }
+
+  .about p {
+    animation: ptext;
+    animation-duration: 3s;
+    position: relative;
+  }
+
+  @keyframes header {
+    0% {
+      top: -300px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
+  @keyframes ptext {
+    0% {
+      left: -1000px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
 }
