@@ -524,4 +524,21 @@ footer .hr {
       left: 0px;
     }
   }
+  .nav-links {
+    animation: nav;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes nav {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 }
