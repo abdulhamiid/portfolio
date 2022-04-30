@@ -541,4 +541,17 @@ footer .hr {
     }
   }
 
+  .project-list:hover,
+  .about-card:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.4s;
+  }
+
+  .project-about li:hover,
+  .about-card li:hover {
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+
 }
