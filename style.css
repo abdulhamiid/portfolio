@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -49,10 +53,6 @@ button:hover {
 
 button:active {
   background-color: #008552;
-}
-
-.btn-bg-green:active {
-  opacity: 9;
 }
 
 /* light background-color for buttons */
@@ -362,6 +362,11 @@ footer .hr {
     display: flex;
     padding-left: 30px;
     margin: 20px;
+    animation: media1;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
   }
 
   .social-media-dsk li {
@@ -392,6 +397,11 @@ footer .hr {
   .nav-links {
     display: flex;
     margin-bottom: 40px;
+    animation: nav;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
   }
 
   /* work section */
@@ -492,5 +502,88 @@ footer .hr {
   footer .email-link,
   footer .hr {
     display: none;
+  }
+
+  /* animation */
+  .about h1 {
+    animation: header;
+    animation-duration: 3s;
+    position: relative;
+  }
+
+  #profile > div p {
+    animation: ptext;
+    animation-duration: 3s;
+    position: relative;
+  }
+
+  @keyframes header {
+    0% {
+      top: -300px;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
+
+  @keyframes ptext {
+    0% {
+      left: -1000px;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+
+  @keyframes nav {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .project-list:hover,
+  .about-card:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.4s;
+  }
+
+  #work-section li:hover,
+  #about-section li:hover {
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+
+  @keyframes media1 {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .social-media-dsk img:hover {
+    transform: rotate(-20deg);
+    transition: 0.5s;
+  }
+
+  button:hover {
+    cursor: pointer;
+    color: #008552;
+    background-color: #ebf0ee;
+    transition: 0.4s;
+    border: 1px solid #008552;
+  }
+
+  button:active {
+    background-color: #008552;
   }
 }
