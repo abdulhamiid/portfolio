@@ -9,6 +9,9 @@
 
 - HTML & CSS
 
+## Live Demo
+
+Click here - [Live Demo](https://abdulhamiid.github.io/portfolio/)
 
 ## Getting Started
 
