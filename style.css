@@ -352,7 +352,7 @@ footer .hr {
     color: #172b4d;
   }
 
-  .hamburger,
+  .menu,
   header h3 {
     display: none;
   }
@@ -413,7 +413,13 @@ footer .hr {
   }
 
   .nav-links {
-    display: flex;
+    visibility: visible;
+    flex-direction: row;
+    background: none;
+    position: relative;
+    top: 0;
+    padding: 0 30px;
+    font-size: 16px;
     margin-bottom: 40px;
     animation: nav;
     animation-duration: 3s;
