@@ -106,28 +106,69 @@ button:active {
   margin: 15px auto;
 }
 
-.header h3 a {
+.header a {
   color: #28352f;
 }
 
 /* hamburger container */
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.menu {
+  font-size: 22px;
 }
 
 /* hamburger */
-.hamburger {
-  width: 25px;
-  height: 2px;
-  margin-bottom: 4px;
-  background-color: #28352f;
+.nav-links {
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px 0;
+  font-size: 3rem;
+  font-weight: bold;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 78%;
+  background-color: #fff;
+  border-radius: 0 0 35px 35px;
+  z-index: 2;
 }
 
-.nav-links {
+.bi-x-lg {
+  color: #67798e;
+}
+
+.nav-links li {
+  margin: 0 0 35px 35px;
+}
+
+.nav-links li a {
+  font-weight: 600;
+  color: #3a4a42;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+/* mobile-menu background */
+.menu-bg {
+  position: relative;
+  background-color: #e5e5e5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.remove {
   display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 #main-content {
@@ -258,10 +299,7 @@ hr {
   background-repeat: no-repeat;
 }
 
-#contact-me > div p {
-  color: #172b4d;
-  font-size: 45px;
-  font-weight: bold;
+#contact-me > div h2 {
   margin-bottom: 40px;
 }
 
@@ -334,7 +372,7 @@ footer .hr {
     color: #172b4d;
   }
 
-  .hamburger,
+  .menu,
   header h3 {
     display: none;
   }
@@ -395,13 +433,28 @@ footer .hr {
   }
 
   .nav-links {
-    display: flex;
+    visibility: visible;
+    flex-direction: row;
+    background: none;
+    position: relative;
+    top: 0;
+    padding: 0 20px;
+    font-size: 16px;
     margin-bottom: 40px;
     animation: nav;
     animation-duration: 3s;
     animation-delay: 3s;
     opacity: 0;
     animation-fill-mode: forwards;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    padding: 0 15px;
+  }
+
+  .menu-bg {
+    display: none;
   }
 
   /* work section */
@@ -466,7 +519,7 @@ footer .hr {
     flex-direction: row;
   }
 
-  #contact-me > div p {
+  #contact-me > div h2 {
     width: 70%;
     font-size: 27px;
     line-height: 1.5;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
 </head>
@@ -11,10 +12,11 @@
   <header class="container header">
     <h3><a href="#">Welcome</a></h3>
     <nav>
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-      <ul class="nav-links flex stretch">
+      <div class="menu flex">
+        <span id="openmenu"><i class="bi bi-list"></i></span>
+        <span id="closemenu" class="remove"><i class="bi bi-x-lg"></i></span>
+      </div>
+      <ul class="nav-links flex stretch hide">
         <li><a href="#work-section">Portfolio</a></li>     
         <li><a href="#about-section">About</a></li>
         <li><a href="#contact-me">Contact</a></li>
@@ -22,6 +24,7 @@
     </nav>
   </header>
   <main id="main-content" class="column-grid">
+    <div class="menu-bg remove"><hr class="hr-dark"></div>
     <section id="profile">
       <div class="about container flex-column">
         <h1>Hey there. I'm Abdulhamid <br><span id="h1-inner-text">I am a Software developer</span></h1>
@@ -208,7 +211,7 @@
     </section>
     <section id="contact-me">
       <div class="container flex-column">
-        <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form action="https://formspree.io/f/mjvlpyje" method="post" class="flex-column stretch">
           <input name="full-name" id="name" type="text" minlength="3" maxlength="30" placeholder="Full name" class="stretch" required>
           <input type="email" id="mail" name="email" placeholder="Email address" class="stretch" required>
@@ -276,5 +279,6 @@
     <a class="email-link" href="https://mail.yahoo.com">adioabdulhamid@yahoo.com</a>
     <hr class="hr hr-dark">
   </footer>
+  <script src="js/index.js"></script>
 </body>
 </html>
