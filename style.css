@@ -133,11 +133,16 @@ button:active {
   z-index: 2;
 }
 
+.bi-x-lg {
+  color: #67798e;
+}
+
 .nav-links li {
   margin: 0 0 35px 35px;
 }
 
 .nav-links li a {
+  font-weight: 600;
   color: #3a4a42;
 }
 
