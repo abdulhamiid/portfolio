@@ -145,6 +145,9 @@ nav > div{
 .nav-links a {
   color: #3a4a42;
 }
+.hide{
+  visibility: hidden;
+}
 
 #main-content {
   grid-gap: 30px 0;
