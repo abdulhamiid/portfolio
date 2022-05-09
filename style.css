@@ -448,6 +448,10 @@ footer .hr {
     padding: 0 15px;
   }
 
+  .menu-bg {
+    display: none;
+  }
+
   /* work section */
   #work-section {
     margin-top: 70px;
