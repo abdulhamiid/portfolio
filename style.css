@@ -137,6 +137,10 @@ button:active {
   margin: 0 0 35px 35px;
 }
 
+.nav-links li a {
+  color: #3a4a42;
+}
+
 .hide {
   visibility: hidden;
 }
