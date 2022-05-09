@@ -136,12 +136,16 @@ button:active {
   color: #3a4a42;
 }
 
-.hide{
+.hide {
   visibility: hidden;
 }
 
 .remove {
   display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 #main-content {
