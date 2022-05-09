@@ -111,21 +111,11 @@ button:active {
 }
 
 /* hamburger container */
-nav > div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.menu {
+  font-size: 22px;
 }
 
 /* hamburger */
-.hamburger {
-  width: 25px;
-  height: 2px;
-  margin-bottom: 4px;
-  background-color: #28352f;
-}
-
 .nav-links {
   position: fixed;
   flex-direction: column;
@@ -145,8 +135,13 @@ nav > div{
 .nav-links a {
   color: #3a4a42;
 }
+
 .hide{
   visibility: hidden;
+}
+
+.remove {
+  display: none;
 }
 
 #main-content {
