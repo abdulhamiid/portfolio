@@ -1,6 +1,8 @@
 /* Design for mobile phones: */
 
 /* global styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -188,11 +190,12 @@ h2 {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 43px;
+  font-size: 39px;
 }
 
 #h1-inner-text {
@@ -208,7 +211,8 @@ h2 {
 /* large paragraph display */
 .p-lg {
   margin: 20px auto;
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 28px;
   color: #172b4d;
 }
 
@@ -355,6 +359,57 @@ footer .hr {
   width: 35%;
   background-color: #0d151e;
 }
+
+  /* popup window */
+  #popup-window-pc {
+    display: none;
+  }
+  #popup-window {
+    background-color: #c1c7d0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  #popup-window > div {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: inherit;
+  }
+  
+  #popup-window > div > div {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  #popup-window p {
+    line-height: 24px;
+    font-size: 16px;
+    color: #344563;
+  }
+
+  #popup-window > div > div h2,
+  #popup-window > div > div ul,
+  #popup-window > div > div div {
+    margin: 10px 0;
+  }
+  .btn-action {
+    justify-content: space-between;
+  }
+  #popup-window button {
+    letter-spacing: 1.5px;
+    padding: 18px;
+  }
+  #popup-window button img{
+    margin-left: 10px;
+  }
 
 @media only screen and (min-width: 768px) {
   /* Design for desktop: */
@@ -639,4 +694,78 @@ footer .hr {
   button:active {
     background-color: #008552;
   }
+
+    /* popup window */
+    #popup-window {
+      display: none;
+    }
+
+    #popup-window-pc {
+      display: block;
+      background-color: #c1c7d0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 70px;
+      z-index: 2;
+    }
+
+    .close-menu-btn {
+      position: absolute;
+      top: 87px;
+      right: 205px;
+      height: 25px;
+      width: 25px;
+    }
+    
+    #popup-window-pc > div {
+      background-color: #fff;
+      height: 80%;
+      width: 80%;
+      border-radius: 8px;
+      padding: 60px 20px;
+      margin: auto;
+      box-sizing: inherit;
+    }
+    
+    #popup-window-pc > div > div {
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    #popup-window-pc p {
+      line-height: 24px;
+      font-size: 16px;
+      color: #344563;
+    }
+  
+    #popup-window-pc > div > div h2,
+    #popup-window-pc > div > div ul,
+    #popup-window-pc > div > div div {
+      margin: 10px 0;
+    }
+
+    .project-title {
+      align-items: flex-start;
+      width: 60%;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    .btn-action-pc {
+      justify-content: end;
+    }
+
+    #popup-window-pc button {
+      padding: 16px;
+      margin-left: 10px;
+      gap: 10px;
+    }
+    #popup-window-pc button img{
+      width: 18px;
+      height: 18px;
+    }
+  
 }
