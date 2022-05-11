@@ -723,33 +723,31 @@ footer .hr {
     #popup-window-pc {
       display: block;
       background-color: #c1c7d0;
-      opacity: 0.9;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       box-sizing: border-box;
-      padding: 70px;
-      z-index: 2;
+      padding-top: 70px;
+      padding-bottom: 150px;
     }
 
     .close-menu-btn {
-     display: flex;
-     justify-self: flex-end;
+      display: flex;
+      align-self: flex-end;
+      margin-bottom: 15px;
       height: 25px;
       width: 25px;
     }
     
     #popup-window-pc > div {
       background-color: #fff;
-      opacity: 1;
       height: 80%;
       width: 80%;
       border-radius: 8px;
-      padding: 60px 20px;
+      padding: 30px 20px 60px 20px;
       margin: auto;
       box-sizing: inherit;
-      z-index: 3;
     }
     
     #popup-window-pc > div > div {

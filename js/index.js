@@ -5,8 +5,26 @@ const closeHamburger = document.querySelector('#closemenu');
 const ul = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
 const menuBg = document.querySelector('.menu-bg');
-const background = document.querySelector("#profile");
+const nav = document.querySelector(".nav-links");
 const lis = Array.from(navLinks);
+// mobile
+let tech = document.querySelectorAll('.tech');
+let sourceCode = document.querySelector('.source');
+let btn = document.querySelectorAll('.action-btn');
+let work = document.querySelector('#popup-window');
+let title = document.querySelector('#popup-window h2')
+let projectImage = document.querySelector('.project-img');
+let btnClose = document.querySelector('.close-menu-btn');
+let projectDiscription = document.querySelector('#popup-window p')
+// desktop
+let projectDiscriptionPc = document.querySelector('#popup-window-pc p')
+let workPc = document.querySelector('#popup-window-pc');
+let titlePc = document.querySelector('#popup-window-pc h3')
+let projectImagePc = document.querySelector('.project-img-pc');
+let techPc = document.querySelectorAll('.tech-pc');
+let sourceCodePc = document.querySelector('.source-pc');
+let footer = document.querySelector('footer')
+let main = document.querySelector('main')
 
 function toggler() {
   logo.classList.toggle('hide');
@@ -132,50 +150,39 @@ const myProjectPc = [{
   'live version': '#'
 }]
 
-
-let work = document.querySelector('#popup-window');
-let workPc = document.querySelector('#popup-window-pc');
-let btn = document.querySelectorAll('.action-btn');
-let title = document.querySelector('#popup-window h2')
-let titlePc = document.querySelector('#popup-window-pc h3')
-let projectDiscription = document.querySelector('#popup-window p')
-let projectDiscriptionPc = document.querySelector('#popup-window-pc p')
-let projectImage = document.querySelector('.project-img');
-let projectImagePc = document.querySelector('.project-img-pc');
-let tech = document.querySelectorAll('.tech');
-let techPc = document.querySelectorAll('.tech-pc');
-let sourceCode = document.querySelector('.source');
-let sourceCodePc = document.querySelector('.source-pc');
-let btnClose = document.querySelector('.close-menu-btn');
-
 btnClose.addEventListener('click', () => {
   workPc.classList.add('hide')
+  nav.classList.remove("blur")
+  main.classList.remove('remove');
+  footer.classList.remove('remove');
 })
 
 btn.forEach(item => {
   item.addEventListener('click', handleClick)
 })
 
-// mobile
-
-// desktop
+function technologyList(idx, prop, prop2){
+  let i = 0;
+  while(i < prop[idx].technologies.length) {
+    prop2.forEach(li => {
+    li.textContent = prop[idx].technologies[i];
+    i += 1;
+    })
+  }
+  main.classList.add('remove');
+  footer.classList.add('remove');
+}
 
   function handleClick(e){
     if(window.innerWidth > 600){
       workPc.classList.toggle('hide')
-      background.classList.toggle("blur")
+      nav.classList.toggle("blur")
       let index = e.path[0].id;
       projectImagePc.setAttribute('src', myProjectPc[index]['image']);
       sourceCodePc.setAttribute('href', myProjectPc[index]['source']);
       titlePc.textContent = myProjectPc[index].name;
       projectDiscriptionPc.textContent = myProjectPc[index].description;
-      let i = 0;
-      while(i < myProjectPc[index].technologies.length) {
-        techPc.forEach(li => {
-        li.textContent = myProjectPc[index].technologies[i];
-        i += 1;
-        })
-      }
+      technologyList(index, myProjectPc, techPc);
     }else {
         let index = e.path[0].id;
         work.classList.remove('remove');
@@ -183,12 +190,6 @@ btn.forEach(item => {
         projectDiscription.textContent = myProject[index].description;
         projectImage.setAttribute('src', myProject[index]['image']);
         sourceCode.setAttribute('href', myProject[index]['source']);
-        let i = 0;
-        while(i < myProject[index].technologies.length) {
-          tech.forEach(li => {
-          li.textContent = myProject[index].technologies[i];
-          i += 1;
-          })
-        }
+        technologyList(index, myProject, tech);
       }
   }
