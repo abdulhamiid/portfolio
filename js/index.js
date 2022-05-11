@@ -1,71 +1,33 @@
+const menu = document.querySelector('.menu');
+const logo = document.querySelector('header h3');
+const hamburger = document.querySelector('#openmenu');
+const closeHamburger = document.querySelector('#closemenu');
+const ul = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-links li');
+const menuBg = document.querySelector('.menu-bg');
+const lis = Array.from(navLinks);
 const btn = document.querySelectorAll('.action-btn');
-const btnClose = document.querySelector('.close-menu-btn');
-const workPc = document.querySelector('#popup-window-pc');
 const nav = document.querySelector('.nav-links');
-btn.forEach((item) => {
-  item.addEventListener('click', handleClick);
+
+function toggler() {
+  logo.classList.toggle('hide');
+  ul.classList.toggle('hide');
+  menuBg.classList.toggle('remove');
+  document.body.classList.toggle('no-scroll');
+}
+
+menu.addEventListener('click', () => {
+  toggler();
+  hamburger.classList.toggle('remove');
+  closeHamburger.classList.toggle('remove');
 });
 
-// btnClose.addEventListener('click', () => {
-//   // workPc.classList.add('hide');
-//   nav.classList.remove('blur');
-// });
-
-function handleClick(e){
-  if (window.innerWidth < '600'){
-    const index = e.path[0].id;
-    const subject = document.querySelector('#my-info h2');
-    subject.insertAdjacentHTML('afterend', 
-   `<div id="popup-window" class="">
-    <div>
-    <div class="flex-column">
-    <img src="${myProject[index].image}" alt="project" class="stretch project-img">
-    <h2>${myProject[index].name}</h2>
-    <ul class="flex">
-    <li class="li-padding bg-ash tech">${myProject[index].technologies[0]}</li>
-    <li class="li-padding bg-ash tech">${myProject[index].technologies[1]}</li>
-    <li class="li-padding bg-ash tech">${myProject[index].technologies[2]}</li>
-    </ul>
-    <p>${myProject[index].description}</p>
-    <div class="btn-action stretch flex">
-    <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
-    <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
-    </div>
-    </div>
-    </div>
-    </div>`)
-  }else if (window.innerWidth > '700'){
-    const index = e.path[0].id;
-    const subject = document.querySelector('#my-info h2');
-    nav.classList.add('blur');
-    subject.insertAdjacentHTML('afterend', 
-   `<div id="popup-window-pc" class="flex">
-    <div>
-    <div class="flex-column">
-    <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
-    <img src="${myProjectPc[index].image}" alt="project-img" class="stretch project-img-pc">
-    <div class="flex project-item stretch">
-    <div class="flex-column project-title">
-    <h3>${myProjectPc[index].name}</h3>
-    <ul class="flex">
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[0]}</li>
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[1]}</li>
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[2]}</li>
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[3]}</li>
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[4]}</li>
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[5]}</li>
-    </ul>
-    </div>
-    <div class="btn-action-pc stretch flex">
-    <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
-    <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source-pc">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
-    </div>
-    </div>
-    <p>${myProjectPc[index].description}</p>
-    </div>
-    </div>
-    </div>`)
-  }
+for (let i = 0; i < lis.length; i += 1) {
+  lis[i].addEventListener('click', () => {
+    toggler();
+    closeHamburger.classList.add('remove');
+    hamburger.classList.remove('remove');
+  });
 }
 
 // mobile
@@ -169,3 +131,65 @@ const myProjectPc = [{
   image: 'img/Snapshoot-Portfolio.png',
   'live version': '#',
 }];
+
+// popup
+function handleClick(e) {
+  if (window.innerWidth < '600') {
+    const index = e.path[0].id;
+    const subject = document.querySelector('#my-info h2');
+    subject.insertAdjacentHTML('afterend',
+      `<div id="popup-window" class="">
+    <div>
+    <div class="flex-column">
+    <img src="${myProject[index].image}" alt="project" class="stretch project-img">
+    <h2>${myProject[index].name}</h2>
+    <ul class="flex">
+    <li class="li-padding bg-ash tech">${myProject[index].technologies[0]}</li>
+    <li class="li-padding bg-ash tech">${myProject[index].technologies[1]}</li>
+    <li class="li-padding bg-ash tech">${myProject[index].technologies[2]}</li>
+    </ul>
+    <p>${myProject[index].description}</p>
+    <div class="btn-action stretch flex">
+    <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
+    <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
+    </div>
+    </div>
+    </div>
+    </div>`);
+  } else if (window.innerWidth > '700') {
+    const index = e.path[0].id;
+    const subject = document.querySelector('#my-info h2');
+    nav.classList.add('blur');
+    subject.insertAdjacentHTML('afterend',
+      `<div id="popup-window-pc" class="flex">
+    <div>
+    <div class="flex-column">
+    <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
+    <img src="${myProjectPc[index].image}" alt="project-img" class="stretch project-img-pc">
+    <div class="flex project-item stretch">
+    <div class="flex-column project-title">
+    <h3>${myProjectPc[index].name}</h3>
+    <ul class="flex">
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[0]}</li>
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[1]}</li>
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[2]}</li>
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[3]}</li>
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[4]}</li>
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[5]}</li>
+    </ul>
+    </div>
+    <div class="btn-action-pc stretch flex">
+    <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
+    <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source-pc">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
+    </div>
+    </div>
+    <p>${myProjectPc[index].description}</p>
+    </div>
+    </div>
+    </div>`);
+  }
+}
+
+btn.forEach((item) => {
+  item.addEventListener('click', handleClick);
+});
