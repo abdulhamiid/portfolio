@@ -423,6 +423,9 @@ footer .hr {
     gap: 5px;
     color: #fff;
   }
+  .blur{
+    filter: blur(4px);
+  }
 
 @media only screen and (min-width: 768px) {
   /* Design for desktop: */
@@ -720,6 +723,7 @@ footer .hr {
     #popup-window-pc {
       display: block;
       background-color: #c1c7d0;
+      opacity: 0.9;
       position: absolute;
       top: 0;
       left: 0;
@@ -730,21 +734,22 @@ footer .hr {
     }
 
     .close-menu-btn {
-      position: absolute;
-      top: 87px;
-      right: 205px;
+     display: flex;
+     justify-self: flex-end;
       height: 25px;
       width: 25px;
     }
     
     #popup-window-pc > div {
       background-color: #fff;
+      opacity: 1;
       height: 80%;
       width: 80%;
       border-radius: 8px;
       padding: 60px 20px;
       margin: auto;
       box-sizing: inherit;
+      z-index: 3;
     }
     
     #popup-window-pc > div > div {
