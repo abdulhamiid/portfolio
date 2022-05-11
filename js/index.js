@@ -1,62 +1,73 @@
-const menu = document.querySelector('.menu');
-const logo = document.querySelector('header h3');
-const hamburger = document.querySelector('#openmenu');
-const closeHamburger = document.querySelector('#closemenu');
-const ul = document.querySelector('.nav-links');
-const navLinks = document.querySelectorAll('.nav-links li');
-const menuBg = document.querySelector('.menu-bg');
-const nav = document.querySelector(".nav-links");
-const lis = Array.from(navLinks);
-// mobile
-let tech = document.querySelectorAll('.tech');
-let sourceCode = document.querySelector('.source');
-let btn = document.querySelectorAll('.action-btn');
-let work = document.querySelector('#popup-window');
-let title = document.querySelector('#popup-window h2')
-let projectImage = document.querySelector('.project-img');
-let btnClose = document.querySelector('.close-menu-btn');
-let projectDiscription = document.querySelector('#popup-window p')
-// desktop
-let projectDiscriptionPc = document.querySelector('#popup-window-pc p')
-let workPc = document.querySelector('#popup-window-pc');
-let titlePc = document.querySelector('#popup-window-pc h3')
-let projectImagePc = document.querySelector('.project-img-pc');
-let techPc = document.querySelectorAll('.tech-pc');
-let sourceCodePc = document.querySelector('.source-pc');
-let footer = document.querySelector('footer')
-let main = document.querySelector('main')
-
-function toggler() {
-  logo.classList.toggle('hide');
-  ul.classList.toggle('hide');
-  menuBg.classList.toggle('remove');
-  document.body.classList.toggle('no-scroll');
-}
-
-menu.addEventListener('click', () => {
-  toggler();
-  hamburger.classList.toggle('remove');
-  closeHamburger.classList.toggle('remove');
-
+const btn = document.querySelectorAll('.action-btn');
+btn.forEach((item) => {
+  item.addEventListener('click', handleClick);
 });
 
-for (let i = 0; i < lis.length; i += 1) {
-  lis[i].addEventListener('click', () => {
-    toggler();
-    closeHamburger.classList.add('remove');
-    hamburger.classList.remove('remove');
-  });
+function handleClick(e){
+  if (window.innerWidth < 600){
+    const index = e.path[0].id;
+    const subject = document.querySelector('#my-info h2');
+    subject.insertAdjacentHTML('afterend', 
+   `<div id="popup-window" class="">
+    <div>
+    <div class="flex-column">
+    <img src="${myProject[index].image}" alt="project" class="stretch project-img">
+    <h2>${myProject[index].name}</h2>
+    <ul class="flex">
+    <li class="li-padding bg-ash tech">${myProject[index].technologies[0]}</li>
+    <li class="li-padding bg-ash tech">${myProject[index].technologies[1]}</li>
+    <li class="li-padding bg-ash tech">${myProject[index].technologies[2]}</li>
+    </ul>
+    <p>${myProject[index].description}</p>
+    <div class="btn-action stretch flex">
+    <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
+    <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
+    </div>
+    </div>
+    </div>
+    </div>`)
+  }else {
+    const index = e.path[0].id;
+    const subject = document.querySelector('#my-info h2');
+    subject.insertAdjacentHTML('afterend', 
+   `<div id="popup-window-pc" class="flex">
+    <div>
+    <div class="flex-column">
+    <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
+    <img src="${myProjectPc[index].image}" alt="project-img" class="stretch project-img-pc">
+    <div class="flex project-item stretch">
+    <div class="flex-column project-title">
+    <h3>${myProjectPc[index].name}</h3>
+    <ul class="flex">
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[0]}</li>
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[1]}</li>
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[2]}</li>
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[3]}</li>
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[4]}</li>
+    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[5]}</li>
+    </ul>
+    </div>
+    <div class="btn-action-pc stretch flex">
+    <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
+    <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source-pc">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
+    </div>
+    </div>
+    <p>${myProjectPc[index].description}</p>
+    </div>
+    </div>
+    </div>`)
+  }
 }
 
 // mobile
 const myProject = [{
   id: 1,
-  name: `Keeping track of hundreds of component`,
+  name: 'Keeping track of hundreds of component',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   technologies: ['Ruby on rails', 'css', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
+  'live version': '#',
 }, {
   id: 2,
   name: 'Multi-Post Stories Gain+Glory',
@@ -64,7 +75,7 @@ const myProject = [{
   technologies: ['Html', 'saa', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
+  'live version': '#',
 }, {
   id: 3,
   name: 'Third Project',
@@ -72,7 +83,7 @@ const myProject = [{
   technologies: ['Html', 'Bootstrap', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
+  'live version': '#',
 }, {
   id: 4,
   name: 'Fourth Project',
@@ -80,7 +91,7 @@ const myProject = [{
   technologies: ['Ruby on rails', 'sass', 'JavaScipt'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
+  'live version': '#',
 }, {
   id: 5,
   name: 'Fifth Project',
@@ -88,7 +99,7 @@ const myProject = [{
   technologies: ['Html', 'CSS', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
+  'live version': '#',
 }, {
   id: 6,
   name: 'Sixth Project',
@@ -96,8 +107,8 @@ const myProject = [{
   technologies: ['Html', 'css', 'React'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
-}]
+  'live version': '#',
+}];
 
 // desktop
 const myProjectPc = [{
@@ -107,7 +118,7 @@ const myProjectPc = [{
   technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': '#'
+  'live version': '#',
 }, {
   id: 2,
   name: 'Multi-Post Stories Gain+Glory',
@@ -115,7 +126,7 @@ const myProjectPc = [{
   technologies: ['Html', 'saa', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
+  'live version': '#',
 }, {
   id: 3,
   name: 'Third Project',
@@ -123,7 +134,7 @@ const myProjectPc = [{
   technologies: ['Html', 'Bootstrap', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
+  'live version': '#',
 }, {
   id: 4,
   name: 'Fourth Project',
@@ -131,7 +142,7 @@ const myProjectPc = [{
   technologies: ['Ruby on rails', 'sass', 'JavaScipt'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
+  'live version': '#',
 }, {
   id: 5,
   name: 'Fifth Project',
@@ -139,7 +150,7 @@ const myProjectPc = [{
   technologies: ['Html', 'CSS', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
+  'live version': '#',
 }, {
   id: 6,
   name: 'Sixth Project',
@@ -147,49 +158,30 @@ const myProjectPc = [{
   technologies: ['Html', 'css', 'React'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#'
-}]
+  'live version': '#',
+}];
 
-btnClose.addEventListener('click', () => {
-  workPc.classList.add('hide')
-  nav.classList.remove("blur")
-  main.classList.remove('remove');
-  footer.classList.remove('remove');
-})
-
-btn.forEach(item => {
-  item.addEventListener('click', handleClick)
-})
-
-function technologyList(idx, prop, prop2){
-  let i = 0;
-  while(i < prop[idx].technologies.length) {
-    prop2.forEach(li => {
-    li.textContent = prop[idx].technologies[i];
-    i += 1;
-    })
-  }
-  main.classList.add('remove');
-  footer.classList.add('remove');
-}
-
-  function handleClick(e){
-    if(window.innerWidth > 600){
-      workPc.classList.toggle('hide')
-      nav.classList.toggle("blur")
-      let index = e.path[0].id;
-      projectImagePc.setAttribute('src', myProjectPc[index]['image']);
-      sourceCodePc.setAttribute('href', myProjectPc[index]['source']);
-      titlePc.textContent = myProjectPc[index].name;
-      projectDiscriptionPc.textContent = myProjectPc[index].description;
-      technologyList(index, myProjectPc, techPc);
-    }else {
-        let index = e.path[0].id;
-        work.classList.remove('remove');
-        title.textContent = myProject[index].name;
-        projectDiscription.textContent = myProject[index].description;
-        projectImage.setAttribute('src', myProject[index]['image']);
-        sourceCode.setAttribute('href', myProject[index]['source']);
-        technologyList(index, myProject, tech);
-      }
-  }
+const insert = document.querySelector('#my-info button');
+insert.addEventListener('click', () => {
+  const subject = document.querySelector('#my-info h2');
+  subject.insertAdjacentHTML('afterend', 
+ `<div id="popup-window" class="">
+  <div>
+  <div class="flex-column">
+  <img src="" alt="project" class="stretch project-img">
+  <h2>${myProject[0].name}</h2>
+  <ul class="flex">
+  <li class="li-padding bg-ash tech">zvnhjlkz</li>
+  <li class="li-padding bg-ash tech">zlkscvnlks</li>
+  <li class="li-padding bg-ash tech">sdlkjaflkas</li>
+  </ul>
+  <p></p>
+  <div class="btn-action stretch flex">
+  <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
+  <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
+  </div>
+  </div>
+  </div>
+  </div>`
+  );
+});
