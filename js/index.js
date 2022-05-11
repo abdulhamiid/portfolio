@@ -1,10 +1,18 @@
 const btn = document.querySelectorAll('.action-btn');
+const btnClose = document.querySelector('.close-menu-btn');
+const workPc = document.querySelector('#popup-window-pc');
+const nav = document.querySelector('.nav-links');
 btn.forEach((item) => {
   item.addEventListener('click', handleClick);
 });
 
+// btnClose.addEventListener('click', () => {
+//   // workPc.classList.add('hide');
+//   nav.classList.remove('blur');
+// });
+
 function handleClick(e){
-  if (window.innerWidth < 600){
+  if (window.innerWidth < '600'){
     const index = e.path[0].id;
     const subject = document.querySelector('#my-info h2');
     subject.insertAdjacentHTML('afterend', 
@@ -26,9 +34,10 @@ function handleClick(e){
     </div>
     </div>
     </div>`)
-  }else {
+  }else if (window.innerWidth > '700'){
     const index = e.path[0].id;
     const subject = document.querySelector('#my-info h2');
+    nav.classList.add('blur');
     subject.insertAdjacentHTML('afterend', 
    `<div id="popup-window-pc" class="flex">
     <div>
@@ -160,28 +169,3 @@ const myProjectPc = [{
   image: 'img/Snapshoot-Portfolio.png',
   'live version': '#',
 }];
-
-const insert = document.querySelector('#my-info button');
-insert.addEventListener('click', () => {
-  const subject = document.querySelector('#my-info h2');
-  subject.insertAdjacentHTML('afterend', 
- `<div id="popup-window" class="">
-  <div>
-  <div class="flex-column">
-  <img src="" alt="project" class="stretch project-img">
-  <h2>${myProject[0].name}</h2>
-  <ul class="flex">
-  <li class="li-padding bg-ash tech">zvnhjlkz</li>
-  <li class="li-padding bg-ash tech">zlkscvnlks</li>
-  <li class="li-padding bg-ash tech">sdlkjaflkas</li>
-  </ul>
-  <p></p>
-  <div class="btn-action stretch flex">
-  <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
-  <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
-  </div>
-  </div>
-  </div>
-  </div>`
-  );
-});

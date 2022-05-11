@@ -360,10 +360,6 @@ footer .hr {
   background-color: #0d151e;
 }
 
-  /* popup window */
-  #popup-window-pc {
-    display: none;
-  }
   #popup-window {
     background-color: #c1c7d0;
     position: absolute;
@@ -715,11 +711,6 @@ footer .hr {
   button:active {
     background-color: #008552;
   }
-
-    /* popup window */
-    /* #popup-window {
-      display: none;
-    } */
 
     #popup-window-pc {
       background-color: #c1c7d0;
