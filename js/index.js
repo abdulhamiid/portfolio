@@ -37,7 +37,7 @@ const myProject = [{
   technologies: ['Ruby on rails', 'css', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }, {
   id: 2,
   name: 'Multi-Post Stories Gain+Glory',
@@ -45,7 +45,7 @@ const myProject = [{
   technologies: ['Html', 'saa', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }, {
   id: 3,
   name: 'Third Project',
@@ -53,7 +53,7 @@ const myProject = [{
   technologies: ['Html', 'Bootstrap', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }, {
   id: 4,
   name: 'Fourth Project',
@@ -61,7 +61,7 @@ const myProject = [{
   technologies: ['Ruby on rails', 'sass', 'JavaScipt'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }, {
   id: 5,
   name: 'Fifth Project',
@@ -69,7 +69,7 @@ const myProject = [{
   technologies: ['Html', 'CSS', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }, {
   id: 6,
   name: 'Sixth Project',
@@ -77,7 +77,7 @@ const myProject = [{
   technologies: ['Html', 'css', 'React'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }];
 
 // desktop
@@ -88,7 +88,7 @@ const myProjectPc = [{
   technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }, {
   id: 2,
   name: 'Multi-Post Stories Gain+Glory',
@@ -96,7 +96,7 @@ const myProjectPc = [{
   technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }, {
   id: 3,
   name: 'Third Project',
@@ -104,7 +104,7 @@ const myProjectPc = [{
   technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }, {
   id: 4,
   name: 'Fourth Project',
@@ -112,7 +112,7 @@ const myProjectPc = [{
   technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }, {
   id: 5,
   name: 'Fifth Project',
@@ -120,7 +120,7 @@ const myProjectPc = [{
   technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }, {
   id: 6,
   name: 'Sixth Project',
@@ -128,7 +128,7 @@ const myProjectPc = [{
   technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': '#',
+  'live version': 'https://abdulhamiid.github.io/portfolio',
 }];
 
 function createPopup(idx, prop) {
@@ -147,8 +147,8 @@ function createPopup(idx, prop) {
   </ul>
   <p>${prop[idx].description}</p>
   <div class="btn-action stretch flex">
-  <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
-  <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
+  <button type="button" class="btn-bg-green"><a href="${prop[idx]['live version']}" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
+  <button type="button" class="btn-bg-green"><a href="${prop[idx].source}" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
   </div>
   </div>
   </div>

@@ -733,6 +733,10 @@ footer .hr {
     bottom: 50px;
   }
 
+  #closemenu-mobile {
+    display: none;
+  }
+
   #popup-window p {
     order: 6;
     position: relative;
