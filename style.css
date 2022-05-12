@@ -432,6 +432,16 @@ footer .hr {
   display: none;
 }
 
+#closemenu-mobile {
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  right: 60px;
+  position: absolute;
+  background-color: #000;
+  opacity: 0;
+}
+
 .blur {
   filter: blur(4px);
 }
@@ -710,6 +720,10 @@ footer .hr {
     order: 4;
     position: relative;
     bottom:50px;
+  }
+
+  #close-menu-mobile {
+    display: none;
   }
   /* animation */
   .about h1 {
