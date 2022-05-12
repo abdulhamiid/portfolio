@@ -143,7 +143,7 @@ function createPopup(idx, prop) {
   <img src="${prop[idx].image}" alt="project" class="stretch project-img">
   <h2>${prop[idx].name}</h2>
   <ul class="flex">
-  ${prop[idx].technologies.map(item => `<li class="li-padding bg-ash tech">${item}</li>`)}
+  ${prop[idx].technologies.map((item) => `<li class="li-padding bg-ash tech">${item}</li>`).join('')}
   </ul>
   <p>${prop[idx].description}</p>
   <div class="btn-action stretch flex">
@@ -153,6 +153,13 @@ function createPopup(idx, prop) {
   </div>
   </div>
   </div>`);
+}
+
+function dltbtn(dbtn) {
+  dbtn.addEventListener('click', (e) => {
+    document.body.classList.remove('no-scroll');
+    e.path[3].remove();
+  });
 }
 
 // popup
@@ -165,17 +172,10 @@ function handleClick(e) {
   } else {
     createPopup(index, myProjectPc);
     const btnClose = document.querySelector('.close-menu-btn');
-    dltbtn(btnClose)
+    dltbtn(btnClose);
   }
 }
 
 btn.forEach((item) => {
   item.addEventListener('click', handleClick);
 });
-
-function dltbtn(dbtn){
-  dbtn.addEventListener('click', (e) => {
-  document.body.classList.remove('no-scroll');
-  e.path[3].remove();
-});
-}

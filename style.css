@@ -377,6 +377,8 @@ footer .hr {
 
 #popup-window > div {
   background-color: #fff;
+  position: relative;
+  top: 0;
   width: 97%;
   margin: auto;
   border-radius: 15px;
@@ -386,7 +388,15 @@ footer .hr {
 
 #popup-window > div > div {
   align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  top: 0;
   text-align: left;
+}
+
+#popup-window .project-img {
+  position: relative;
+  top: 0;
 }
 
 #popup-window .close i {
@@ -433,18 +443,20 @@ footer .hr {
 }
 
 #closemenu-mobile {
-  width: 30px;
-  height: 30px;
-  top: 50px;
-  right: 60px;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
   position: absolute;
   background-color: #000;
   opacity: 0;
+  z-index: 3;
 }
 
 .blur {
   filter: blur(4px);
 }
+
 #popup-window > div > div ul {
   flex-wrap: wrap;
   width: 100%;
@@ -452,7 +464,6 @@ footer .hr {
   justify-content: flex-start;
   align-items: flex-start;
 }
-
 
 @media only screen and (min-width: 768px) {
   /* Design for desktop: */
@@ -603,6 +614,8 @@ footer .hr {
   #about-section > ul {
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
+    gap: 0 20px;
   }
 
   #about-section > li {
@@ -731,6 +744,7 @@ footer .hr {
     position: relative;
     bottom: 50px;
   }
+
   #popup-window > div > div ul {
     flex-wrap: wrap;
     width: 100%;
@@ -738,7 +752,6 @@ footer .hr {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  
 
   #close-menu-mobile {
     display: none;
