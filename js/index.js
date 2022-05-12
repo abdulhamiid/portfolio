@@ -160,21 +160,21 @@ function handleClick(e) {
   const index = e.path[0].id;
   if (window.innerWidth < 600) {
     createPopup(index, myProject);
-    const menuCloseMobile = document.querySelector('#closemenu-mobile');
-    menuCloseMobile.addEventListener('click', (e) => {
-      document.body.classList.remove('no-scroll');
-      e.path[3].remove();
-    });
+    dltbtn(menuCloseMobile);
   } else {
     createPopup(index, myProjectPc);
     const btnClose = document.querySelector('.close-menu-btn');
-    btnClose.addEventListener('click', (e) => {
-      document.body.classList.remove('no-scroll');
-      e.path[3].remove();
-    });
+    dltbtn(btnClose)
   }
 }
 
 btn.forEach((item) => {
   item.addEventListener('click', handleClick);
 });
+
+function dltbtn(dbtn){
+  dbtn.addEventListener('click', (e) => {
+  document.body.classList.remove('no-scroll');
+  e.path[3].remove();
+});
+}
