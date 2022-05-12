@@ -160,6 +160,7 @@ function handleClick(e) {
   const index = e.path[0].id;
   if (window.innerWidth < 600) {
     createPopup(index, myProject);
+    const menuCloseMobile = document.querySelector('#closemenu-mobile');
     dltbtn(menuCloseMobile);
   } else {
     createPopup(index, myProjectPc);

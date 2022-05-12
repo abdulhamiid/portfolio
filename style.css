@@ -445,6 +445,14 @@ footer .hr {
 .blur {
   filter: blur(4px);
 }
+#popup-window > div > div ul {
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 
 @media only screen and (min-width: 768px) {
   /* Design for desktop: */
@@ -723,6 +731,14 @@ footer .hr {
     position: relative;
     bottom: 50px;
   }
+  #popup-window > div > div ul {
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
 
   #close-menu-mobile {
     display: none;
