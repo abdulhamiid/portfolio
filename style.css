@@ -681,7 +681,7 @@ footer .hr {
     padding-top: 70px;
     padding-bottom: 150px;
   }
-  
+
   .close-menu-btn {
     display: flex;
     align-self: flex-end;
@@ -705,26 +705,29 @@ footer .hr {
   #popup-window .project-img {
     margin-bottom: 20px;
   }
-  #popup-window h2 {
+
+  #popup-window > div > div h2 {
     order: 3;
     position: relative;
-    bottom:50px;
+    bottom: 50px;
   }
+
   #popup-window p {
     order: 6;
     position: relative;
-    bottom:50px;
+    bottom: 50px;
   }
 
   #popup-window ul {
     order: 4;
     position: relative;
-    bottom:50px;
+    bottom: 50px;
   }
 
   #close-menu-mobile {
     display: none;
   }
+
   /* animation */
   .about h1 {
     animation: header;
