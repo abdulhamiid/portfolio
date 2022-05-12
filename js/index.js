@@ -7,7 +7,6 @@ const navLinks = document.querySelectorAll('.nav-links li');
 const menuBg = document.querySelector('.menu-bg');
 const lis = Array.from(navLinks);
 const btn = document.querySelectorAll('.action-btn');
-const nav = document.querySelector('.nav-links');
 
 function toggler() {
   logo.classList.toggle('hide');
@@ -132,30 +131,6 @@ const myProjectPc = [{
   'live version': '#',
 }];
 
-// popup
-function handleClick(e) {
-    const index = e.path[0].id;
-    if (window.innerWidth < 600){
-      createPopup(index, myProject);
-      const menuCloseMobile = document.querySelector('#closemenu-mobile');
-      menuCloseMobile.addEventListener('click', (e) => {
-        document.body.classList.remove('no-scroll');
-        e.path[3].remove()
-      })
-    }else {
-      createPopup(index, myProjectPc);
-      const btnClose = document.querySelector('.close-menu-btn');
-      btnClose.addEventListener('click', (e) => {
-        document.body.classList.remove('no-scroll');
-        e.path[3].remove();
-      });
-    }
-}
-
-btn.forEach((item) => {
-  item.addEventListener('click', handleClick);
-});
-
 function createPopup(idx, prop) {
   document.body.classList.add('no-scroll');
   const subject = document.querySelector('#my-info h2');
@@ -179,3 +154,27 @@ function createPopup(idx, prop) {
   </div>
   </div>`);
 }
+
+// popup
+function handleClick(e) {
+  const index = e.path[0].id;
+  if (window.innerWidth < 600) {
+    createPopup(index, myProject);
+    const menuCloseMobile = document.querySelector('#closemenu-mobile');
+    menuCloseMobile.addEventListener('click', (e) => {
+      document.body.classList.remove('no-scroll');
+      e.path[3].remove();
+    });
+  } else {
+    createPopup(index, myProjectPc);
+    const btnClose = document.querySelector('.close-menu-btn');
+    btnClose.addEventListener('click', (e) => {
+      document.body.classList.remove('no-scroll');
+      e.path[3].remove();
+    });
+  }
+}
+
+btn.forEach((item) => {
+  item.addEventListener('click', handleClick);
+});
