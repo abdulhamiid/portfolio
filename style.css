@@ -362,22 +362,23 @@ footer .hr {
 
 #popup-window {
   background-color: #c1c7d0;
-  position: absolute;
+  position: fixed;
+  overflow: auto;
   top: 0;
   left: 0;
   width: 100%;
-
-  /* height: 100%; */
+  height: 100%;
   padding: 20px;
-  z-index: 5;
+  z-index: 1;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 #popup-window > div {
   background-color: #fff;
-
-  /* height: 100%; */
-  width: 100%;
+  width: 97%;
+  margin: auto;
   border-radius: 15px;
   padding: 20px;
   box-sizing: inherit;
@@ -425,6 +426,10 @@ footer .hr {
 #popup-window button a {
   gap: 5px;
   color: #fff;
+}
+
+.close-menu-btn {
+  display: none;
 }
 
 .blur {
@@ -654,17 +659,19 @@ footer .hr {
   }
 
   /* popup-window */
-  #popup-window-pc {
-    background-color: #c1c7d0;
-    position: absolute;
+  #popup-window {
+    background-color: rgba(193, 199, 208, 1);
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    overflow: auto;
     box-sizing: border-box;
     padding-top: 70px;
     padding-bottom: 150px;
   }
-
+  
   .close-menu-btn {
     display: flex;
     align-self: flex-end;
@@ -673,70 +680,37 @@ footer .hr {
     width: 25px;
   }
 
-  #popup-window-pc > div {
-    background-color: #fff;
-    height: 80%;
-    width: 80%;
-    border-radius: 8px;
-    padding: 30px 20px 60px 20px;
-    margin: auto;
-    box-sizing: inherit;
-  }
-
-  #popup-window-pc > div > div {
+  .btn-action {
+    justify-content: flex-end;
+    gap: 20px;
+    order: 2;
     align-items: flex-start;
-    text-align: left;
+    margin-top: 30px;
   }
 
-  #popup-window-pc h3 {
-    color: #172b4d;
-  }
-
-  #popup-window-pc p,
-  #popup-window-pc li {
-    line-height: 24px;
-    font-size: 16px;
-    color: #344563;
-  }
-
-  #popup-window-pc > div > div h2,
-  #popup-window-pc > div > div ul,
-  #popup-window-pc > div > div div {
-    margin: 10px 0;
-  }
-
-  .project-title {
-    align-items: flex-start;
-    width: 60%;
-    box-sizing: border-box;
-    text-align: left;
-  }
-
-  .btn-action-pc {
-    justify-content: end;
-    align-self: flex-start;
-  }
-
-  #popup-window-pc button {
-    padding: 16px;
-    margin-left: 10px;
+  .btn-action button {
     margin-top: 0;
   }
 
-  #popup-window-pc button:hover {
-    background-color: #008552;
+  #popup-window .project-img {
+    margin-bottom: 20px;
+  }
+  #popup-window h2 {
+    order: 3;
+    position: relative;
+    bottom:50px;
+  }
+  #popup-window p {
+    order: 6;
+    position: relative;
+    bottom:50px;
   }
 
-  #popup-window-pc button a {
-    gap: 10px;
-    color: #fff;
+  #popup-window ul {
+    order: 4;
+    position: relative;
+    bottom:50px;
   }
-
-  #popup-window-pc button img {
-    width: 18px;
-    height: 18px;
-  }
-
   /* animation */
   .about h1 {
     animation: header;

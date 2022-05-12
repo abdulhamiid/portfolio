@@ -134,62 +134,43 @@ const myProjectPc = [{
 
 // popup
 function handleClick(e) {
-  if (window.innerWidth < '600') {
     const index = e.path[0].id;
-    const subject = document.querySelector('#my-info h2');
-    subject.insertAdjacentHTML('afterend',
-      `<div id="popup-window" class="">
-    <div>
-    <div class="flex-column">
-    <img src="${myProject[index].image}" alt="project" class="stretch project-img">
-    <h2>${myProject[index].name}</h2>
-    <ul class="flex">
-    <li class="li-padding bg-ash tech">${myProject[index].technologies[0]}</li>
-    <li class="li-padding bg-ash tech">${myProject[index].technologies[1]}</li>
-    <li class="li-padding bg-ash tech">${myProject[index].technologies[2]}</li>
-    </ul>
-    <p>${myProject[index].description}</p>
-    <div class="btn-action stretch flex">
-    <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
-    <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
-    </div>
-    </div>
-    </div>
-    </div>`);
-  } else if (window.innerWidth > '700') {
-    const index = e.path[0].id;
-    const subject = document.querySelector('#my-info h2');
-    nav.classList.add('blur');
-    subject.insertAdjacentHTML('afterend',
-      `<div id="popup-window-pc" class="flex">
-    <div>
-    <div class="flex-column">
-    <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
-    <img src="${myProjectPc[index].image}" alt="project-img" class="stretch project-img-pc">
-    <div class="flex project-item stretch">
-    <div class="flex-column project-title">
-    <h3>${myProjectPc[index].name}</h3>
-    <ul class="flex">
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[0]}</li>
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[1]}</li>
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[2]}</li>
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[3]}</li>
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[4]}</li>
-    <li class="li-padding bg-ash tech-pc">${myProjectPc[index].technologies[5]}</li>
-    </ul>
-    </div>
-    <div class="btn-action-pc stretch flex">
-    <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
-    <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source-pc">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
-    </div>
-    </div>
-    <p>${myProjectPc[index].description}</p>
-    </div>
-    </div>
-    </div>`);
-  }
+    if (window.innerWidth < 600){
+      createPopup(index, myProject)
+    }else {
+      createPopup(index, myProjectPc);
+      const btnClose = document.querySelector('.close-menu-btn');
+      btnClose.addEventListener('click', (e) => {
+        e.path[3].remove();
+        document.body.classList.remove('no-scroll');
+      });
+    }
 }
 
 btn.forEach((item) => {
   item.addEventListener('click', handleClick);
 });
+
+function createPopup(idx, prop) {
+  document.body.classList.add('no-scroll');
+  const subject = document.querySelector('#my-info h2');
+  subject.insertAdjacentHTML('afterend',
+    `<div id="popup-window" class="">
+  <div>
+  <div class="flex-column">
+  <span id="closemenu-mobile"><i class="bi bi-x-lg"></i></span>
+  <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
+  <img src="${prop[idx].image}" alt="project" class="stretch project-img">
+  <h2>${prop[idx].name}</h2>
+  <ul class="flex">
+  ${prop[idx].technologies.map(item => `<li class="li-padding bg-ash tech">${item}</li>`)}
+  </ul>
+  <p>${prop[idx].description}</p>
+  <div class="btn-action stretch flex">
+  <button type="button" class="btn-bg-green"><a href="#" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
+  <button type="button" class="btn-bg-green"><a href="" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
+  </div>
+  </div>
+  </div>
+  </div>`);
+}
