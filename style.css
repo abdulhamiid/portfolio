@@ -700,34 +700,37 @@ footer .hr {
     display: flex;
     justify-content: center;
   }
-  
+
   #popup-window > div {
     background-color: #fff;
     position: relative;
     top: 0;
     width: 50%;
+
     /* height: 95%; */
     margin: auto;
     border-radius: 5px;
     padding: 9px;
   }
-  
+
   #popup-window > div > div {
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
     top: 0;
-    height: 100%;
     text-align: left;
+    margin-top: 10px;
+    height: 90%;
+    margin-bottom: 20px;
   }
-  
+
   #popup-window .project-img {
     position: relative;
     height: 43vh;
     top: 0;
   }
 
-  #popup-window h2 {
+  #popup-window > div > div h2 {
     order: 3;
     margin: 5px 0;
     font-size: 20px;
@@ -735,7 +738,7 @@ footer .hr {
     position: relative;
     top: -40px;
   }
-  
+
   #popup-window p {
     order: 6;
     line-height: 14px;
@@ -743,13 +746,6 @@ footer .hr {
     color: #344563;
     position: relative;
     top: -40px;
-  }
-  
-  #popup-window > div > div {
-    margin: 10px 0;
-    height: 90%;
-    margin-bottom: 20px;
-    overflow: none;
   }
 
   #popup-window > div > div ul {
@@ -763,16 +759,15 @@ footer .hr {
     position: relative;
     top: -40px;
   }
-  
+
   .btn-action {
     align-self: flex-start;
     justify-content: flex-end;
-    gap: 10px
+    gap: 10px;
   }
-  
+
   #popup-window button {
     letter-spacing: 1.5px;
-    padding: 18px 13px;
     font-size: 10px;
     padding: 5px;
   }
@@ -781,24 +776,24 @@ footer .hr {
     height: 10px;
     width: 10px;
   }
-  
+
   #popup-window button a {
     gap: 5px;
     color: #fff;
   }
-  
+
   .close-menu-btn {
     display: flex;
     align-self: flex-end;
     margin-bottom: 5px;
     height: 18px;
-    width:18px;
+    width: 18px;
   }
 
   #closemenu-mobile {
     display: none;
   }
-  
+
   /* animation */
   .about h1 {
     animation: header;
