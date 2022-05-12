@@ -445,6 +445,16 @@ footer .hr {
 .blur {
   filter: blur(4px);
 }
+.error {
+  margin: 5px;
+  width: 60%;
+  padding: 15px;
+  font-size: 16px;
+  color: rgb(247, 9, 9);
+  background-color: rgba(255, 108, 108, 0.4);
+  border: 1px solid red;
+}
+
 
 @media only screen and (min-width: 768px) {
   /* Design for desktop: */
