@@ -198,3 +198,21 @@ function handleSubmit(e) {
 }
 
 form.addEventListener('submit', handleSubmit);
+
+// local storage
+let formData = {name: '', email: '', message: ''};
+
+if (localStorage.getItem('myportfolio') !== null) {
+  const data = localStorage.getItem('myportfolio');
+  formData = JSON.parse(data);
+}
+
+const formElements = document.querySelectorAll('input, textarea');
+formElements.forEach((item) => {
+  item.value = formData[item.name];
+  item.addEventListener('input', (e) => {
+    formData[e.target.name] = e.target.value;
+    localStorage.setItem('myportfolio', JSON.stringify(formData));
+  });
+});
+
