@@ -200,7 +200,7 @@ function handleSubmit(e) {
 form.addEventListener('submit', handleSubmit);
 
 // local storage
-let formData = {name: '', email: '', message: ''};
+let formData = { name: '', email: '', message: '' };
 
 if (localStorage.getItem('myportfolio') !== null) {
   const data = localStorage.getItem('myportfolio');
@@ -215,4 +215,3 @@ formElements.forEach((item) => {
     localStorage.setItem('myportfolio', JSON.stringify(formData));
   });
 });
-
