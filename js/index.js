@@ -179,3 +179,17 @@ function handleClick(e) {
 btn.forEach((item) => {
   item.addEventListener('click', handleClick);
 });
+const email = document.querySelector('#mail');
+const form = document.querySelector('form')
+form.addEventListener('submit', handleSubmit);
+let errorMsg = document.querySelector('#message');
+ 
+function handleSubmit(e){
+  e.preventDefault();
+  let regex = /[A-Z]/ig;
+  let userEmail = email.value;
+  console.log(userEmail);
+  userEmail.match(regex) ? console.log('error') : ('success');
+  errorMsg.innerHTML = 'User email should be in lower case all through'
+  errorMsg.classList.add('error');
+}
