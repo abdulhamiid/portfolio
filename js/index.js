@@ -84,12 +84,12 @@ const myProject = [{
 // desktop
 const myProjectPc = [{
   id: 1,
-  name: 'Keeping track of hundreds of component',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
+  name: 'Awesome Books',
+  description: 'Awesome books app is a basic website that allows users to add/remove books from a list. It is a single page app (SPA) which allow switching to different pages of the app without page load. Built with JavaScript.',
+  technologies: ['Github', 'JavaScript', 'CSS', 'Terminal', 'HTML', 'ES6 modules'],
+  source: 'https://github.com/abdulhamiid/awesome-books-es6-modules',
+  image: 'img/awsomebk.PNG',
+  'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
 }, {
   id: 2,
   name: 'Multi-Post Stories Gain+Glory',
@@ -148,7 +148,7 @@ function createPopup(idx, prop) {
   </ul>
   <p>${prop[idx].description}</p>
   <div class="btn-action stretch flex">
-  <button type="button" class="btn-bg-green"><a href="${prop[idx]['live version']}" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
+  <button type="button" class="btn-bg-green"><a href="${prop[idx]['live version']}" target="_blank" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
   <button type="button" class="btn-bg-green"><a href="${prop[idx].source}" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
   </div>
   </div>
@@ -215,77 +215,3 @@ inputs.forEach(item => {
     localStorage.setItem('portfolio', data)
   })
 })
-
-
-
-// let 
-
-
-
-
-// local storage
-// let formData = { name: '', email: '', message: '' };
-
-// if (localStorage.getItem('myportfolio') !== null) {
-//   const data = localStorage.getItem('myportfolio');
-//   formData = JSON.parse(data);
-// }
-
-// const formElements = document.querySelectorAll('input, textarea');
-// formElements.forEach((item) => {
-//   item.value = formData[item.name];
-//   item.addEventListener('input', (e) => {
-//     formData[e.target.name] = e.target.value;
-//     localStorage.setItem('myportfolio', JSON.stringify(formData));
-//   });
-// });
-
-
-
-
-// function populateStorage() {
-//   localStorage.setItem('name', nameInput);
-//   localStorage.setItem('email', emailInput);
-//   localStorage.setItem('message', msgInput);
-
-
-//   setStyles();
-// }
-
-// nameInput.onchange = populateStorage;
-// emailInput.onchange = populateStorage;
-// msgInput.onchange = populateStorage;
-
-
-// var nameForm = document.getElementById('name');
-// var emailForm = document.getElementById('mail');
-// var messageForm = document.getElementById('msg');
-
-// if(!localStorage.getItem('email')) {
-//   populateStorage();
-// } else {
-//   setStyles();
-// }
-
-
-// function populateStorage() {
-//   document.getElementById('name').value = formxx.name;
-//   formxx.email = document.getElementById('mail').value
-//   formxx.mesg = document.getElementById('msg').value
-//   localStorage.setItem('forme', JSON.stringify(formxx));
-
-//   setStyles();
-// }
-
-// function  setStyles() {
-//   const data = localStorage.getItem('forme')
-
-//   formxx = JSON.parse('data');
-//   document.getElementById('name').value = formxx.name;
-//   document.getElementById('mail').value = formxx.email;
-//   document.getElementById('msg').value = formxx.mesg;
-// }
-
-// nameForm.onchange = populateStorage;
-// emailForm.onkeydown = populateStorage;
-// messageForm.onkeydown = populateStorage;
