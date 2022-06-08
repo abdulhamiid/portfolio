@@ -199,19 +199,93 @@ function handleSubmit(e) {
 
 form.addEventListener('submit', handleSubmit);
 
-// local storage
-let formData = { name: '', email: '', message: '' };
+let formxx = {name: '', mail: '', msg: ''};
 
-if (localStorage.getItem('myportfolio') !== null) {
-  const data = localStorage.getItem('myportfolio');
-  formData = JSON.parse(data);
+if(localStorage.getItem('portfolio') !== null){
+  newdata = localStorage.getItem('portfolio');
+  formxx = JSON.parse(newdata);
 }
-
-const formElements = document.querySelectorAll('input, textarea');
-formElements.forEach((item) => {
-  item.value = formData[item.name];
+let inputs = document.querySelectorAll('input, textarea');
+inputs.forEach(item => {
+  item.value = formxx[item.id];
+  // console.log(item.id)
   item.addEventListener('input', (e) => {
-    formData[e.target.name] = e.target.value;
-    localStorage.setItem('myportfolio', JSON.stringify(formData));
-  });
-});
+    formxx[e.target.id] = e.target.value;
+    let data = JSON.stringify(formxx);
+    localStorage.setItem('portfolio', data)
+  })
+})
+
+
+
+// let 
+
+
+
+
+// local storage
+// let formData = { name: '', email: '', message: '' };
+
+// if (localStorage.getItem('myportfolio') !== null) {
+//   const data = localStorage.getItem('myportfolio');
+//   formData = JSON.parse(data);
+// }
+
+// const formElements = document.querySelectorAll('input, textarea');
+// formElements.forEach((item) => {
+//   item.value = formData[item.name];
+//   item.addEventListener('input', (e) => {
+//     formData[e.target.name] = e.target.value;
+//     localStorage.setItem('myportfolio', JSON.stringify(formData));
+//   });
+// });
+
+
+
+
+// function populateStorage() {
+//   localStorage.setItem('name', nameInput);
+//   localStorage.setItem('email', emailInput);
+//   localStorage.setItem('message', msgInput);
+
+
+//   setStyles();
+// }
+
+// nameInput.onchange = populateStorage;
+// emailInput.onchange = populateStorage;
+// msgInput.onchange = populateStorage;
+
+
+// var nameForm = document.getElementById('name');
+// var emailForm = document.getElementById('mail');
+// var messageForm = document.getElementById('msg');
+
+// if(!localStorage.getItem('email')) {
+//   populateStorage();
+// } else {
+//   setStyles();
+// }
+
+
+// function populateStorage() {
+//   document.getElementById('name').value = formxx.name;
+//   formxx.email = document.getElementById('mail').value
+//   formxx.mesg = document.getElementById('msg').value
+//   localStorage.setItem('forme', JSON.stringify(formxx));
+
+//   setStyles();
+// }
+
+// function  setStyles() {
+//   const data = localStorage.getItem('forme')
+
+//   formxx = JSON.parse('data');
+//   document.getElementById('name').value = formxx.name;
+//   document.getElementById('mail').value = formxx.email;
+//   document.getElementById('msg').value = formxx.mesg;
+// }
+
+// nameForm.onchange = populateStorage;
+// emailForm.onkeydown = populateStorage;
+// messageForm.onkeydown = populateStorage;
