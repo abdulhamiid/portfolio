@@ -272,7 +272,7 @@ hr {
   width: 100%;
 }
 
-.project-about::first-child {
+.project-about:first-child {
   height: 100%;
   box-sizing: border-box;
 }

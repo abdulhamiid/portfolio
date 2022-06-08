@@ -88,7 +88,7 @@ const myProjectPc = [{
   description: 'Awesome books app is a basic website that allows users to add/remove books from a list. It is a single page app (SPA) which allow switching to different pages of the app without page load. Built with JavaScript.',
   technologies: ['Github', 'JavaScript', 'CSS', 'Terminal', 'HTML', 'ES6 modules'],
   source: 'https://github.com/abdulhamiid/awesome-books-es6-modules',
-  image: 'img/awsomebk.PNG',
+  image: 'img/awesome-list.PNG',
   'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
 }, {
   id: 2,
