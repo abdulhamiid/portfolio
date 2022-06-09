@@ -124,7 +124,7 @@ button:active {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 40px 0;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   top: 50px;
   left: 0;
@@ -252,15 +252,18 @@ hr {
 }
 
 .project-list {
-  height: 474px;
+  height: 60%;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 5px;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 
 .project-list img {
   width: 100%;
+  height: 40%;
+  border-radius: 5px;
 }
 
 /* project info container */
@@ -269,7 +272,6 @@ hr {
   background-color: #fff;
   border-radius: 8px;
   align-self: flex-end;
-  width: 100%;
 }
 
 .project-about:first-child {
@@ -438,12 +440,16 @@ footer .hr {
 }
 
 .bi-x-lg { 
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   z-index: 3;
   display: flex;
   flex-direction: row-reverse;
 } 
+
+.bi-x-lg:hover {
+  cursor: pointer;
+}
 
 #popup-window > div > div ul {
   flex-wrap: wrap;
@@ -451,6 +457,10 @@ footer .hr {
   box-sizing: border-box;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+#popup-window h2 {
+  font-size: 1.5em;
 }
 
 .error {
@@ -595,10 +605,18 @@ footer .hr {
     height: 430px;
   }
 
+  #popup-window h2 {
+    font-size: 35px;
+  }
   .project-list img {
     margin-bottom: 18px;
     width: 100%;
+    height: 50%;
+  }
+
+  .project-about {
     height: 100%;
+    padding: 0;
   }
 
   .project-about li {
@@ -792,10 +810,9 @@ footer .hr {
 
   .close-menu-btn {
     display: flex;
-    align-self: flex-end;
-    margin-bottom: 5px;
-    height: 18px;
     width: 18px;
+    height: 18px;
+    margin-left: 96%;
   }
 
   .close-menu-btn:hover {
