@@ -41,16 +41,16 @@ const myProject = [{
   'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
 }, {
   id: 2,
-  name: 'Multi-Post Stories Gain+Glory',
-  description: 'Second Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  name: 'Conference Website',
+  description: 'This project I built the home and the about page of the conference page. The template I used to create this template was originally designed by Cindy Shin in Behance.',
   technologies: ['Html', 'saa', 'JavaScript'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
+  source: 'https://github.com/abdulhamiid/capstone-project',
+  image: 'img/conference-page.PNG',
+  'live version': 'https://abdulhamiid.github.io/capstone-project',
 }, {
   id: 3,
   name: 'Third Project',
-  description: 'Third Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  description: 'Third Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever tandard dummy text ever since the 1500',
   technologies: ['Html', 'Bootstrap', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
@@ -58,7 +58,7 @@ const myProject = [{
 }, {
   id: 4,
   name: 'Fourth Project',
-  description: 'Fourth Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  description: 'Fourth Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipstype and scrambled it 1960s with the releaLorem th the relea',
   technologies: ['Ruby on rails', 'sass', 'JavaScipt'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
@@ -66,7 +66,7 @@ const myProject = [{
 }, {
   id: 5,
   name: 'Fifth Project',
-  description: 'FifthProject Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  description: 'FifthProject Lorems with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has and scrambled it 1960s with the relea',
   technologies: ['Html', 'CSS', 'JavaScript'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
@@ -74,7 +74,7 @@ const myProject = [{
 }, {
   id: 6,
   name: 'Sixth Project',
-  description: 'Sixth Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  description: 'Sixth Project Lorem Ipsum ithe industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   technologies: ['Html', 'css', 'React'],
   source: 'https://github.com/abdulhamiid',
   image: 'img/Snapshoot-Portfolio.png',
@@ -134,13 +134,13 @@ const myProjectPc = [{
 
 function createPopup(idx, prop) {
   document.body.classList.add('no-scroll');
-  const subject = document.querySelector('#my-info h2');
+  const subject = document.querySelector('#work-section');
   subject.insertAdjacentHTML('afterend',
     `<div id="popup-window" class="">
   <div>
   <i class="bi bi-x-lg" id="closemenu-mobile"></i>
-  <div class="flex-column">
   <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
+  <div class="flex-column">
   <img src="${prop[idx].image}" alt="project" class="stretch project-img">
   <h2>${prop[idx].name}</h2>
   <ul class="flex">
@@ -159,22 +159,22 @@ function createPopup(idx, prop) {
 function dltbtn(dbtn) {
   dbtn.addEventListener('click', (e) => {
     document.body.classList.remove('no-scroll');
-    e.path[3].remove();
+    e.target.parentElement.parentElement.remove();
   });
 }
 
 // popup
 function handleClick(e) {
-  const index = e.path[0].id;
-  if (window.innerWidth < 600) {
+  const index = e.target.id;
+  // if (window.innerWidth < 768) {
     createPopup(index, myProject);
     const menuCloseMobile = document.querySelector('#closemenu-mobile');
     dltbtn(menuCloseMobile);
-  } else {
-    createPopup(index, myProjectPc);
+  // } else {
+  //   createPopup(index, myProjectPc);
     const btnClose = document.querySelector('.close-menu-btn');
     dltbtn(btnClose);
-  }
+  // }
 }
 
 btn.forEach((item) => {
