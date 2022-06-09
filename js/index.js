@@ -33,12 +33,12 @@ for (let i = 0; i < lis.length; i += 1) {
 // mobile
 const myProject = [{
   id: 1,
-  name: 'Keeping track of hundreds of component',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['Ruby on rails', 'css', 'JavaScript'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
+  name: 'Awesome Books',
+  description: 'Awesome books app is a basic website that allows users to add/remove books from a list. It is a single page app (SPA) which allow switching to different pages of the app without page load. Built with JavaScript.',
+  technologies: ['JavaScript', 'CSS','ES6 modules'],
+  source: 'https://github.com/abdulhamiid/awesome-books-es6-modules',
+  image: 'img/awesome-list.PNG',
+  'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
 }, {
   id: 2,
   name: 'Multi-Post Stories Gain+Glory',
@@ -138,8 +138,8 @@ function createPopup(idx, prop) {
   subject.insertAdjacentHTML('afterend',
     `<div id="popup-window" class="">
   <div>
+  <i class="bi bi-x-lg" id="closemenu-mobile"></i>
   <div class="flex-column">
-  <span id="closemenu-mobile"></span>
   <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
   <img src="${prop[idx].image}" alt="project" class="stretch project-img">
   <h2>${prop[idx].name}</h2>
@@ -148,8 +148,8 @@ function createPopup(idx, prop) {
   </ul>
   <p>${prop[idx].description}</p>
   <div class="btn-action stretch flex">
-  <button type="button" class="btn-bg-green"><a href="${prop[idx]['live version']}" target="_blank" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
-  <button type="button" class="btn-bg-green"><a href="${prop[idx].source}" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
+  <button type="button" class="btn-bg-green" id="popup-btn"><a href="${prop[idx]['live version']}" target="_blank" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
+  <button type="button" class="btn-bg-green" id="popup-btn"><a href="${prop[idx].source}" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
   </div>
   </div>
   </div>
