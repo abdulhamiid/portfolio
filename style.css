@@ -272,6 +272,8 @@ hr {
   background-color: #fff;
   border-radius: 8px;
   align-self: flex-end;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .project-about:first-child {
@@ -301,6 +303,10 @@ hr {
 
 .abt-me {
   padding-top: 35px;
+}
+
+#popup-window h2 {
+  font-size: 1.5em;
 }
 
 /* contact info */
@@ -439,13 +445,13 @@ footer .hr {
   display: none;
 }
 
-.bi-x-lg { 
+.bi-x-lg {
   font-size: 20px;
   font-weight: bold;
   z-index: 3;
   display: flex;
   flex-direction: row-reverse;
-} 
+}
 
 .bi-x-lg:hover {
   cursor: pointer;
@@ -457,10 +463,6 @@ footer .hr {
   box-sizing: border-box;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-#popup-window h2 {
-  font-size: 1.5em;
 }
 
 .error {
@@ -608,6 +610,7 @@ footer .hr {
   #popup-window h2 {
     font-size: 35px;
   }
+
   .project-list img {
     margin-bottom: 18px;
     width: 100%;

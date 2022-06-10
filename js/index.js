@@ -35,7 +35,7 @@ const myProject = [{
   id: 1,
   name: 'Awesome Books',
   description: 'Awesome books app is a basic website that allows users to add/remove books from a list. It is a single page app (SPA) which allow switching to different pages of the app without page load. Built with JavaScript.',
-  technologies: ['JavaScript', 'CSS','ES6 modules'],
+  technologies: ['JavaScript', 'CSS', 'ES6 modules'],
   source: 'https://github.com/abdulhamiid/awesome-books-es6-modules',
   image: 'img/awesome-list.PNG',
   'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
@@ -92,12 +92,12 @@ const myProjectPc = [{
   'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
 }, {
   id: 2,
-  name: 'Multi-Post Stories Gain+Glory',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
+  name: 'Conference Website',
+  description: 'This project I built the home and the about page of the conference page. The template I used to create this template was originally designed by Cindy Shin in Behance.',
+  technologies: ['Html', 'saa', 'JavaScript'],
+  source: 'https://github.com/abdulhamiid/capstone-project',
+  image: 'img/conference-page.PNG',
+  'live version': 'https://abdulhamiid.github.io/capstone-project',
 }, {
   id: 3,
   name: 'Third Project',
@@ -166,15 +166,15 @@ function dltbtn(dbtn) {
 // popup
 function handleClick(e) {
   const index = e.target.id;
-  // if (window.innerWidth < 768) {
+  if (window.innerWidth < 768) {
     createPopup(index, myProject);
     const menuCloseMobile = document.querySelector('#closemenu-mobile');
     dltbtn(menuCloseMobile);
-  // } else {
-  //   createPopup(index, myProjectPc);
+  } else {
+    createPopup(index, myProjectPc);
     const btnClose = document.querySelector('.close-menu-btn');
     dltbtn(btnClose);
-  // }
+  }
 }
 
 btn.forEach((item) => {
@@ -199,19 +199,19 @@ function handleSubmit(e) {
 
 form.addEventListener('submit', handleSubmit);
 
-let formxx = {name: '', mail: '', msg: ''};
+let formxx = { name: '', mail: '', msg: '' };
 
-if(localStorage.getItem('portfolio') !== null){
-  newdata = localStorage.getItem('portfolio');
+if (localStorage.getItem('portfolio') !== null) {
+  const newdata = localStorage.getItem('portfolio');
   formxx = JSON.parse(newdata);
 }
-let inputs = document.querySelectorAll('input, textarea');
-inputs.forEach(item => {
+const inputs = document.querySelectorAll('input, textarea');
+inputs.forEach((item) => {
   item.value = formxx[item.id];
   // console.log(item.id)
   item.addEventListener('input', (e) => {
     formxx[e.target.id] = e.target.value;
-    let data = JSON.stringify(formxx);
-    localStorage.setItem('portfolio', data)
-  })
-})
+    const data = JSON.stringify(formxx);
+    localStorage.setItem('portfolio', data);
+  });
+});
