@@ -384,8 +384,8 @@ footer .hr {
   z-index: 1;
   overflow: hidden;
   display: flex;
-
-  /* padding-top: 8px; */
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
 }
 
@@ -393,7 +393,6 @@ footer .hr {
   background-color: #fff;
   width: 95%;
   height: auto;
-  margin: 15px auto auto auto;
   border-radius: 15px;
   padding: 20px;
   box-sizing: inherit;
