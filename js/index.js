@@ -208,7 +208,6 @@ if (localStorage.getItem('portfolio') !== null) {
 const inputs = document.querySelectorAll('input, textarea');
 inputs.forEach((item) => {
   item.value = formxx[item.id];
-  // console.log(item.id)
   item.addEventListener('input', (e) => {
     formxx[e.target.id] = e.target.value;
     const data = JSON.stringify(formxx);
