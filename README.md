@@ -16,7 +16,9 @@ Click here - [Live Demo](https://abdulhamiid.github.io/portfolio/)
 ## Screenshot
 ![screenshot](./img/portfolio1.PNG)
 ![screenshot](./img/portfolioPopup.PNG)
-![screenshot](./img/portfoliom1.PNG)
+![screenshot](./img/portmobile.PNG)
+![screenshot](./img/portfoliom2.PNG)
+![screenshot](./img/menu.PNG)
 
 ## Getting Started
 
