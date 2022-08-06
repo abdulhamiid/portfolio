@@ -13,7 +13,7 @@
 
 Click here - [Live Demo](https://abdulhamiid.github.io/portfolio/)
 
-## Screenshot
+## Screenshots
 ![screenshot](./img/portfolio1.PNG)
 ![screenshot](./img/portfolioPopup.PNG)
 ![screenshot](./img/portmobile.PNG)
