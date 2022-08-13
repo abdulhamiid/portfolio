@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-Click here - [Live Demo](https://abdulhamiid.github.io/portfolio/)
+🔥 [Click here](https://abdulhamiid.github.io/portfolio/) 🔥
 
 ## Screenshots
 ![screenshot](./img/portfolio1.PNG)
@@ -30,6 +30,13 @@ To get a local copy up and running follow these simple example steps.
 git clone https://github.com/abdulhamiid/portfolio.git
 ```
 
+Open project derectory
+```
+cd portfolio
+```
+
+## Getting Started
+
 ### Deployment
 
 open the ```index.html``` on your Browser
@@ -39,8 +46,8 @@ open the ```index.html``` on your Browser
 
 👤 **Abdulhamid**
 
-- GitHub: [@githubhandle](https://github.com/abdulhamiid)
-- Twitter: [@twitterhandle](https://twitter.com/abdulhamid_adio)
+- GitHub: [abdulhamiid](https://github.com/abdulhamiid)
+- Twitter: [@abdulhamid_adio](https://twitter.com/abdulhamid_adio)
 - LinkedIn: [LinkedIn](https://linkedin.com/)
 
 ## 🤝 Contributing
@@ -51,4 +58,13 @@ Feel free to check the [issues page](https://github.com/abdulhamiid/portfolio/is
 
 ## Show your support
 
+
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thanks to microverse
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
