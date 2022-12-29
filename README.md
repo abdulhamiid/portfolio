@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-🔥 [Click here](https://startling-horse-eb3842.netlify.app/) 🔥
+🔥 [Click here](https://abdulhamid-adio-portfolio.netlify.app/) 🔥
 
 ## Screenshots
 ![screenshot](./img/portfolio1.PNG)
