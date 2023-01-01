@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f0518f2c15.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/icon.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
@@ -13,8 +15,8 @@
     <h3><a href="#">Welcome</a></h3>
     <nav>
       <div class="menu flex">
-        <span id="openmenu"><i class="bi bi-list"></i></span>
-        <span id="closemenu" class="remove"><i class="bi bi-x-lg"></i></span>
+        <span id="openmenu"><i class="fa-solid fa-bars"></i></span>
+        <span id="closemenu" class="remove"><i class="fa-sharp fa-solid fa-xmark"></i></span>
       </div>
       <ul class="nav-links flex stretch hide">
         <li><a href="#work-section">Portfolio</a></li>     
@@ -37,7 +39,7 @@
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com">
+            <a href="https://www.linkedin.com/in/abdulhamid-adio">
               <img src="img/Linkedin-icon.png" alt="linkedin">
             </a>
           </li>
@@ -64,7 +66,7 @@
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com">
+            <a href="https://www.linkedin.com/in/abdulhamid-adio">
               <img src="img/Linkedin-icon.png" alt="linkedin">
             </a>
           </li>
@@ -92,20 +94,7 @@
       <hr class="hr hr-green">
       <div class="container-grid">
         <div class="project-list container flex-column">
-          <img src="img/awesome-list.PNG" alt="project-1">
-          <div class="project-about flex-column">
-            <h3 class="font-md">Awesome Books</h3>
-            <ul class="flex">
-              <li class="li-padding bg-ash">JavScript</li>
-              <li class="li-padding bg-ash">Es6 modules</li>
-              <li class="li-padding bg-ash">css</li>
-              <li class="li-padding bg-ash">html</li>
-            </ul>
-            <button type="button" class="btn-bg-green action-btn" id="0">See Project</button>
-          </div>
-        </div>
-        <div class="project-list container flex-column">
-          <img src="img/conference-page.PNG" alt="project-2">
+          <img src="img/conference-page.PNG" alt="project-1">
           <div class="project-about flex-column">
             <h3 class="font-md">Conference Website</h3>
             <ul class="flex">
@@ -113,22 +102,36 @@
               <li class="li-padding bg-ash">JavScript</li>
               <li class="li-padding bg-ash">html</li>
             </ul>
+            <button type="button" class="btn-bg-green action-btn" id="0">See Project</button>
+          </div>
+        </div>
+        <div class="project-list container flex-column">
+          <img src="img/maath-magicains.jpg" alt="project-2">
+          <div class="project-about flex-column">
+            <h3 class="font-md">Math Magicians</h3>
+            <ul class="flex">
+              <li class="li-padding bg-ash">React</li>
+              <li class="li-padding bg-ash">css</li>
+              <li class="li-padding bg-ash">html</li>
+            </ul>
             <button type="button" class="btn-bg-green action-btn" id="1">See Project</button>
           </div>
         </div>
-        <div class="project-list container flex">
+        <div class="project-list container flex-column">
+          <img src="img/covid_tracker.PNG" alt="project-3">
           <div class="project-about flex-column">
-            <h3 class="font-md">Multi-Post Stories <br>Gain+Glory</h3>
+            <h3 class="font-md">Covid Tracker</h3>
             <ul class="flex">
-              <li class="li-padding bg-ash">Ruby on rails</li>
-              <li class="li-padding bg-ash">css</li>
-              <li class="li-padding bg-ash">JavScript</li>
+              <li class="li-padding bg-ash">React</li>
+              <li class="li-padding bg-ash">CSS</li>
+              <li class="li-padding bg-ash">Redux</li>
+              <li class="li-padding bg-ash">Bootstrap</li>
               <li class="li-padding bg-ash">html</li>
             </ul>
             <button type="button" class="btn-bg-green action-btn" id="2">See Project</button>
           </div>
         </div>
-        <div class="project-list container flex">
+        <div class="project-list container flex-column">
           <div class="project-about flex-column">
             <h3 class="font-md">Multi-Post Stories <br>Gain+Glory</h3>
             <ul class="flex">
@@ -141,7 +144,7 @@
           </div>
         </div>
         <div class="project-list container flex">
-          <div class="project-about flex-column">
+          <div class="project-about fle`x-column">
             <h3 class="font-md">Multi-Post Stories <br>Gain+Glory</h3>
             <ul class="flex">
               <li class="li-padding bg-ash">Ruby on rails</li>
@@ -152,13 +155,14 @@
             <button type="button" class="btn-bg-green action-btn" id="4">See Project</button>
           </div>
         </div>
-        <div class="project-list container flex">
+        <div class="project-list container flex-column">
+          <img src="img/awesome-list.PNG" alt="project-1">
           <div class="project-about flex-column">
-            <h3 class="font-md">Multi-Post Stories <br>Gain+Glory</h3>
+            <h3 class="font-md">Awesome Books</h3>
             <ul class="flex">
-              <li class="li-padding bg-ash">Ruby on rails</li>
-              <li class="li-padding bg-ash">css</li>
               <li class="li-padding bg-ash">JavScript</li>
+              <li class="li-padding bg-ash">Es6 modules</li>
+              <li class="li-padding bg-ash">css</li>
               <li class="li-padding bg-ash">html</li>
             </ul>
             <button type="button" class="btn-bg-green action-btn" id="5">See Project</button>
@@ -172,7 +176,9 @@
           <h2>About me</h2>
           <p class="p-lg"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
             don’t hestiate to contact me.</p>
-          <button type="button" class="btn-bg-green">Get My Resume</button>
+            <a href ="./resume.pdf" attributes-list download ="Resume Abdulhamid Adio">
+              <button type="button" class="btn-bg-green"><i class="fa-sharp fa-solid fa-download"></i> Get My Resume</button>
+            </a>
         </div>
       </div>
       <ul class="flex-column container">
@@ -193,6 +199,7 @@
             <li class="li-padding bg-light green">Bootstrap</li>
             <li class="li-padding bg-light green">Ruby on rails</li>
             <li class="li-padding bg-light green">RSpec</li>
+            <li class="li-padding bg-light green">React</li>
             <li class="li-padding bg-light green">Capybara</li>
             <li class="li-padding bg-light green">Selenium</li>
           </ul>
@@ -227,7 +234,7 @@
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com">
+            <a href="https://www.linkedin.com/in/abdulhamid-adio">
               <img src="img/Linkedin-icon.png" alt="linkedin">
             </a>
           </li>
@@ -258,7 +265,7 @@
         </a>
       </li>
       <li>
-        <a href="https://linkedin.com">
+        <a href="https://www.linkedin.com/in/abdulhamid-adio">
           <img src="img/Linkedin-icon.png" alt="linkedin">
         </a>
       </li>

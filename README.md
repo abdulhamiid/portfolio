@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Portfolio Design
 
 > This project is a Responsive version of my portfolio design, the website looks good (and readable) on all screens.
@@ -16,9 +14,6 @@
 ## Screenshots
 ![screenshot](./img/portfolio1.PNG)
 ![screenshot](./img/portfolioPopup.PNG)
-![screenshot](./img/portmobile.PNG)
-![screenshot](./img/portfoliom2.PNG)
-![screenshot](./img/menu.PNG)
 
 ## Getting Started
 
@@ -48,7 +43,7 @@ open the ```index.html``` on your Browser
 
 - GitHub: [abdulhamiid](https://github.com/abdulhamiid)
 - Twitter: [@abdulhamid_adio](https://twitter.com/abdulhamid_adio)
-- LinkedIn: [LinkedIn](https://linkedin.com/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdulhamid-adio)
 
 ## 🤝 Contributing
 

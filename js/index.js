@@ -32,7 +32,39 @@ for (let i = 0; i < lis.length; i += 1) {
 
 // mobile
 const myProject = [{
+  id: 0,
+  name: 'Conference Website',
+  description: 'This project I built the home and the about page of the conference page. The template I used to create this template was originally designed by Cindy Shin in Behance.',
+  technologies: ['Html', 'saa', 'JavaScript'],
+  source: 'https://github.com/abdulhamiid/capstone-project',
+  image: 'img/conference-page.PNG',
+  'live version': 'https://bds-conference.netlify.app',
+}, {
   id: 1,
+  name: 'Math Magicians',
+  description: 'Sixth Project Lorem Ipsum ithe industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Html', 'css', 'React'],
+  source: 'https://github.com/abdulhamiid',
+  image: 'img/maath-magicains.jpg',
+  'live version': 'https://maths-magician-webapp.netlify.app',
+}, {
+  id: 2,
+  name: 'Covid-19 Tracker',
+  description: 'Fourth Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipstype and scrambled it 1960s with the releaLorem th the relea',
+  technologies: ['Ruby on rails', 'sass', 'JavaScipt'],
+  source: 'https://github.com/abdulhamiid/covid-19',
+  image: './img/covid_tracker.PNG',
+  'live version': 'https://vcovid-19-tracker.netlify.app',
+}, {
+  id: 3,
+  name: 'Bookstore',
+  description: 'Third Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever tandard dummy text ever since the 1500',
+  technologies: ['Html', 'Bootstrap', 'JavaScript'],
+  source: 'https://github.com/abdulhamiid/bookstore',
+  image: './img/bookstorecms.PNG',
+  'live version': 'https://grand-entremet-4178eb.netlify.app/',
+}, {
+  id: 4,
   name: 'Awesome Books',
   description: 'Awesome books app is a basic website that allows users to add/remove books from a list. It is a single page app (SPA) which allow switching to different pages of the app without page load. Built with JavaScript.',
   technologies: ['JavaScript', 'CSS', 'ES6 modules'],
@@ -40,96 +72,13 @@ const myProject = [{
   image: 'img/awesome-list.PNG',
   'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
 }, {
-  id: 2,
-  name: 'Conference Website',
-  description: 'This project I built the home and the about page of the conference page. The template I used to create this template was originally designed by Cindy Shin in Behance.',
-  technologies: ['Html', 'saa', 'JavaScript'],
-  source: 'https://github.com/abdulhamiid/capstone-project',
-  image: 'img/conference-page.PNG',
-  'live version': 'https://abdulhamiid.github.io/capstone-project',
-}, {
-  id: 3,
-  name: 'Third Project',
-  description: 'Third Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever tandard dummy text ever since the 1500',
-  technologies: ['Html', 'Bootstrap', 'JavaScript'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
-}, {
-  id: 4,
-  name: 'Fourth Project',
-  description: 'Fourth Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipstype and scrambled it 1960s with the releaLorem th the relea',
-  technologies: ['Ruby on rails', 'sass', 'JavaScipt'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
-}, {
-  id: 5,
-  name: 'Fifth Project',
-  description: 'FifthProject Lorems with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has and scrambled it 1960s with the relea',
-  technologies: ['Html', 'CSS', 'JavaScript'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
-}, {
-  id: 6,
-  name: 'Sixth Project',
-  description: 'Sixth Project Lorem Ipsum ithe industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['Html', 'css', 'React'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
-}];
-
-// desktop
-const myProjectPc = [{
   id: 1,
-  name: 'Awesome Books',
-  description: 'Awesome books app is a basic website that allows users to add/remove books from a list. It is a single page app (SPA) which allow switching to different pages of the app without page load. Built with JavaScript.',
-  technologies: ['Github', 'JavaScript', 'CSS', 'Terminal', 'HTML', 'ES6 modules'],
-  source: 'https://github.com/abdulhamiid/awesome-books-es6-modules',
-  image: 'img/awesome-list.PNG',
-  'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
-}, {
-  id: 2,
   name: 'Conference Website',
   description: 'This project I built the home and the about page of the conference page. The template I used to create this template was originally designed by Cindy Shin in Behance.',
   technologies: ['Html', 'saa', 'JavaScript'],
   source: 'https://github.com/abdulhamiid/capstone-project',
   image: 'img/conference-page.PNG',
-  'live version': 'https://abdulhamiid.github.io/capstone-project',
-}, {
-  id: 3,
-  name: 'Third Project',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
-}, {
-  id: 4,
-  name: 'Fourth Project',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
-}, {
-  id: 5,
-  name: 'Fifth Project',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
-}, {
-  id: 6,
-  name: 'Sixth Project',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  source: 'https://github.com/abdulhamiid',
-  image: 'img/Snapshoot-Portfolio-pc.png',
-  'live version': 'https://abdulhamiid.github.io/portfolio',
+  'live version': 'https://bds-conference.netlify.app',
 }];
 
 function createPopup(idx, prop) {
@@ -138,10 +87,9 @@ function createPopup(idx, prop) {
   subject.insertAdjacentHTML('afterend',
     `<div id="popup-window" class="">
   <div>
-  <i class="bi bi-x-lg" id="closemenu-mobile"></i>
   <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
-  <div class="flex-column">
   <img src="${prop[idx].image}" alt="project" class="stretch project-img">
+  <div class="flex-column">
   <h2>${prop[idx].name}</h2>
   <ul class="flex">
   ${prop[idx].technologies.map((item) => `<li class="li-padding bg-ash tech">${item}</li>`).join('')}
@@ -166,15 +114,9 @@ function dltbtn(dbtn) {
 // popup
 function handleClick(e) {
   const index = e.target.id;
-  if (window.innerWidth < 768) {
     createPopup(index, myProject);
-    const menuCloseMobile = document.querySelector('#closemenu-mobile');
-    dltbtn(menuCloseMobile);
-  } else {
-    createPopup(index, myProjectPc);
     const btnClose = document.querySelector('.close-menu-btn');
     dltbtn(btnClose);
-  }
 }
 
 btn.forEach((item) => {
@@ -189,8 +131,21 @@ function handleSubmit(e) {
   const regex = /[A-Z]/g;
   const userEmail = email.value;
   if (userEmail.match(regex)) {
-    errorMsg.innerHTML = 'Email should be in lower case';
-    errorMsg.classList.add('error');
+    if(!errorMsg.classList.contains('error')){
+      errorMsg.classList.add('error');
+      const icon = document.createElement('i');
+      icon.classList.add('fa-sharp', 'fa-solid', 'fa-circle-info');
+      errorMsg.appendChild(icon);
+      const p = document.createElement('p');
+      p.innerHTML = 'Email should be in lower case';
+      errorMsg.appendChild(p);
+
+      function removeErr() {
+        errorMsg.innerHTML = '';
+        errorMsg.classList.remove('error');
+      }
+      setTimeout(removeErr, 3000);
+    }
   } else {
     errorMsg.remove();
     form.submit();
