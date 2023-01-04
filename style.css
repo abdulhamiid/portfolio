@@ -399,6 +399,7 @@ footer .hr {
 #popup-window {
   background-color: rgba(193, 199, 208, 0.7);
   backdrop-filter: blur(7px);
+  margin: 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -416,10 +417,12 @@ footer .hr {
 #popup-window > div {
   background-color: #fff;
   position: relative;
+  padding: 40px 0;
+  margin: 40px 0;
   width: 95%;
-  padding-top: 50px;
   border-radius: 15px;
-  box-sizing: inherit;
+  box-sizing: border-box;
+
 }
 
 .close-menu-btn {
@@ -550,6 +553,14 @@ footer .hr {
     background-repeat: no-repeat;
     background-position: bottom left, bottom right;
     padding-bottom: 50px;
+  }
+
+  #popup-window {
+    padding: 30px 0;
+  }
+
+  #popup-window .project-img {
+    margin-bottom: 0px;
   }
 
   /* desktop-social-media links */
@@ -739,8 +750,6 @@ footer .hr {
     position: relative;
     top: 0;
     width: 50%;
-
-    /* height: 95%; */
     margin: auto;
     border-radius: 5px;
     padding: 9px;
@@ -752,33 +761,21 @@ footer .hr {
     position: relative;
     top: 0;
     text-align: left;
-    margin-top: 10px;
     height: 90%;
     margin-bottom: 20px;
   }
 
-  #popup-window .project-img {
-    position: relative;
-    height: 43vh;
-    top: 0;
-  }
-
   #popup-window > div > div h2 {
-    order: 3;
     margin: 5px 0;
     font-size: 20px;
     width: 60%;
     position: relative;
-    top: -40px;
   }
 
   #popup-window p {
-    order: 6;
-    line-height: 14px;
-    font-size: 10px;
+    font-size: 14px;
     color: #344563;
     position: relative;
-    top: -40px;
   }
 
   #popup-window > div > div ul {
@@ -787,10 +784,8 @@ footer .hr {
     box-sizing: border-box;
     justify-content: flex-start;
     align-items: flex-start;
-    font-size: 8px;
-    order: 4;
+    font-size: 12px;
     position: relative;
-    top: -40px;
   }
 
   .btn-action {
