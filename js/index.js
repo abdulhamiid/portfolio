@@ -57,13 +57,13 @@ const myProject = [{
   'live version': 'https://vcovid-19-tracker.netlify.app',
 }, {
   id: 3,
-  name: 'Bookstore',
-  description: 'Third Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever tandard dummy text ever since the 1500',
-  technologies: ['Html', 'Bootstrap', 'JavaScript'],
-  source: 'https://github.com/abdulhamiid/bookstore',
-  image: './img/bookstorecms.PNG',
-  'live version': 'https://grand-entremet-4178eb.netlify.app/',
-}, {
+  name: 'GymFit',
+  description: 'GymFit is a web application that allows users to view and reserve a fitness activity, i.e. Yoga class, Gym e.t.c. A user can reserve multiple fitness activities and a fitness activity can have multiple reservations on separate dates.',
+  technologies: ['Html', 'Bootstrap', 'Ract', 'Ruby on rails'],
+  source: 'https://github.com/abdulhamiid/final-capstone-back-end',
+  image: 'img/gym.PNG',
+  'live version': 'https://final-capstone-front-lfmdhnejp-developerwaleed.vercel.app/',
+},{
   id: 4,
   name: 'Awesome Books',
   description: 'Awesome books app is a basic website that allows users to add/remove books from a list. It is a single page app (SPA) which allow switching to different pages of the app without page load. Built with JavaScript.',
@@ -72,13 +72,13 @@ const myProject = [{
   image: 'img/awesome-list.PNG',
   'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
 }, {
-  id: 1,
-  name: 'Conference Website',
-  description: 'This project I built the home and the about page of the conference page. The template I used to create this template was originally designed by Cindy Shin in Behance.',
-  technologies: ['Html', 'saa', 'JavaScript'],
-  source: 'https://github.com/abdulhamiid/capstone-project',
-  image: 'img/conference-page.PNG',
-  'live version': 'https://bds-conference.netlify.app',
+  id: 5,
+  name: 'Bookstore',
+  description: 'Third Project Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever tandard dummy text ever since the 1500',
+  technologies: ['Html', 'Bootstrap', 'JavaScript'],
+  source: 'https://github.com/abdulhamiid/bookstore',
+  image: './img/bookstorecms.PNG',
+  'live version': 'https://grand-entremet-4178eb.netlify.app/',
 }];
 
 function createPopup(idx, prop) {
