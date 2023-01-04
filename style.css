@@ -835,7 +835,7 @@ footer .hr {
 
   @keyframes header {
     0% {
-      scale: 100;
+      scale: 0;
     }
 
     100% {
