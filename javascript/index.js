@@ -63,7 +63,7 @@ const myProject = [{
   source: 'https://github.com/abdulhamiid/final-capstone-back-end',
   image: 'img/gym.PNG',
   'live version': 'https://final-capstone-front-lfmdhnejp-developerwaleed.vercel.app/',
-},{
+}, {
   id: 4,
   name: 'Awesome Books',
   description: 'Awesome books app is a basic website that allows users to add/remove books from a list. It is a single page app (SPA) which allow switching to different pages of the app without page load. Built with JavaScript.',
@@ -114,9 +114,9 @@ function dltbtn(dbtn) {
 // popup
 function handleClick(e) {
   const index = e.target.id;
-    createPopup(index, myProject);
-    const btnClose = document.querySelector('.close-menu-btn');
-    dltbtn(btnClose);
+  createPopup(index, myProject);
+  const btnClose = document.querySelector('.close-menu-btn');
+  dltbtn(btnClose);
 }
 
 btn.forEach((item) => {
@@ -130,8 +130,9 @@ function handleSubmit(e) {
   e.preventDefault();
   const regex = /[A-Z]/g;
   const userEmail = email.value;
+
   if (userEmail.match(regex)) {
-    if(!errorMsg.classList.contains('error')){
+    if (!errorMsg.classList.contains('error')) {
       errorMsg.classList.add('error');
       const icon = document.createElement('i');
       icon.classList.add('fa-sharp', 'fa-solid', 'fa-circle-info');
@@ -140,11 +141,10 @@ function handleSubmit(e) {
       p.innerHTML = 'Email should be in lower case';
       errorMsg.appendChild(p);
 
-      function removeErr() {
+      setTimeout(() => {
         errorMsg.innerHTML = '';
         errorMsg.classList.remove('error');
-      }
-      setTimeout(removeErr, 3000);
+      }, 3000);
     }
   } else {
     errorMsg.remove();

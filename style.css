@@ -399,7 +399,6 @@ footer .hr {
 #popup-window {
   background-color: rgba(193, 199, 208, 0.7);
   backdrop-filter: blur(7px);
-  margin: 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -422,14 +421,11 @@ footer .hr {
   width: 95%;
   border-radius: 15px;
   box-sizing: border-box;
-
 }
 
 .close-menu-btn {
   z-index: 2;
   display: flex;
-  position: relative;
-  top: 0px;
   margin: 10px;
   width: 25px;
   height: 25px;
@@ -499,7 +495,7 @@ footer .hr {
 
 .error {
   border: 1px solid;
-  margin: 10px 0px;
+  margin: 10px 0;
   padding: 10px;
   display: flex;
   box-sizing: border-box;
@@ -509,8 +505,8 @@ footer .hr {
   gap: 10px;
   background-repeat: no-repeat;
   background-position: 10px center;
-  color: #00529B;
-  background-color: #BDE5F8;
+  color: #00529b;
+  background-color: #bde5f8;
 }
 
 .error i {
@@ -560,7 +556,7 @@ footer .hr {
   }
 
   #popup-window .project-img {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   /* desktop-social-media links */
@@ -828,7 +824,7 @@ footer .hr {
   }
 
   .about h1,
-  #profile > div p  {
+  #profile > div p {
     animation-duration: 3s;
     position: relative;
   }
