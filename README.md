@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-🔥 [Click here](https://abdulhamid-adio-portfolio.netlify.app/) 🔥
+🔥 [Click here](https://abdulhamiid.github.io/portfolio/) 🔥
 
 ## Screenshots
 ![screenshot](./img/portfolio1.PNG)

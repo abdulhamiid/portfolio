@@ -122,7 +122,12 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 15px auto;
+  position: fixed;
+  z-index: 1;
+  background: #fff;
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
 }
 
 .header a {
@@ -197,7 +202,7 @@ button:active {
 }
 
 #profile {
-  padding-top: 10%;
+  padding-top: 30%;
   background-image: url(img/header-illsutration-mobile@2x.png);
   background-position: center center;
   background-size: cover;
@@ -404,31 +409,19 @@ footer .hr {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  margin: auto;
-  overflow: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  z-index: 3;
 }
 
 #popup-window > div {
   background-color: #fff;
-  position: relative;
-  padding: 40px 0;
-  margin: 40px 0;
-  width: 95%;
-  border-radius: 15px;
-  box-sizing: border-box;
 }
 
 .close-menu-btn {
   z-index: 2;
   display: flex;
   margin: 10px;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   right: 12px;
   top: 12px;
@@ -447,12 +440,6 @@ footer .hr {
   box-sizing: border-box;
   top: 0;
   text-align: left;
-}
-
-#popup-window .project-img {
-  position: relative;
-  top: 0;
-  margin-bottom: 30px;
 }
 
 #popup-window p {
@@ -517,6 +504,7 @@ footer .hr {
   /* Design for desktop: */
   .header {
     position: absolute;
+    background: 0;
     justify-content: center;
     width: 100%;
   }
@@ -539,6 +527,7 @@ footer .hr {
   }
 
   nav li {
+    margin: 0;
     color: #172b4d;
     font-weight: bold;
     padding: 0 20px;
@@ -552,11 +541,7 @@ footer .hr {
   }
 
   #popup-window {
-    padding: 30px 0;
-  }
-
-  #popup-window .project-img {
-    margin-bottom: 0;
+    overflow: auto;
   }
 
   /* desktop-social-media links */
@@ -575,6 +560,7 @@ footer .hr {
   }
 
   #profile {
+    padding-top: 10%;
     background-image: url(img/Header-llustration-desktop.png);
     background-position: center top;
     height: 650px;
@@ -596,6 +582,9 @@ footer .hr {
   }
 
   .nav-links {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     visibility: visible;
     flex-direction: row;
     background: none;
@@ -603,7 +592,6 @@ footer .hr {
     top: 0;
     padding: 20px;
     font-size: 16px;
-    margin-bottom: 40px;
   }
 
   .nav-links li {
@@ -617,8 +605,7 @@ footer .hr {
 
   /* work section */
   #work-section {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    padding-top: 100px;
   }
 
   #work-section h2 {
@@ -671,11 +658,19 @@ footer .hr {
     width: 60%;
   }
 
+  #about-section {
+    padding-top: 70px;
+  }
+
   #about-section > ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
     gap: 0 20px;
+  }
+
+  .mynav li {
+    padding: 0 28px;
   }
 
   #about-section > li {
@@ -686,7 +681,7 @@ footer .hr {
 
   /* contact-me section */
   #contact-me {
-    padding-top: 60px;
+    padding-top: 100px;
     background-image: none;
   }
 
@@ -746,41 +741,19 @@ footer .hr {
     position: relative;
     top: 0;
     width: 50%;
-    margin: auto;
+    margin: 20px auto;
     border-radius: 5px;
     padding: 9px;
   }
 
-  #popup-window > div > div {
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-    top: 0;
-    text-align: left;
-    height: 90%;
-    margin-bottom: 20px;
-  }
-
-  #popup-window > div > div h2 {
-    margin: 5px 0;
-    font-size: 20px;
-    width: 60%;
-    position: relative;
+  .project-img {
+    height: 200px;
+    margin-bottom: 0;
   }
 
   #popup-window p {
     font-size: 14px;
     color: #344563;
-    position: relative;
-  }
-
-  #popup-window > div > div ul {
-    flex-wrap: wrap;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 12px;
     position: relative;
   }
 
@@ -847,5 +820,21 @@ footer .hr {
     100% {
       scale: 1;
     }
+  }
+
+  .mynav {
+    height: 30px;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    padding: 30px;
+    z-index: 2;
+    box-sizing: border-box;
+  }
+
+  .nav-active {
+    background-color: #fff;
+    box-shadow: 5px -1px 12px -5px grey;
+    border-radius: 0;
   }
 }
