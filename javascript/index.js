@@ -8,6 +8,15 @@ const menuBg = document.querySelector('.menu-bg');
 const lis = Array.from(navLinks);
 const btn = document.querySelectorAll('.action-btn');
 
+const navbar = document.querySelector('.mynav');
+window.onscroll = () => {
+  if (window.scrollY > 40) {
+    navbar.classList.add('nav-active');
+  } else {
+    navbar.classList.remove('nav-active');
+  }
+};
+
 function toggler() {
   logo.classList.toggle('hide');
   ul.classList.toggle('hide');
