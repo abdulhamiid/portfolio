@@ -87,8 +87,10 @@ function createPopup(idx, prop) {
   subject.insertAdjacentHTML('afterend',
     `<div id="popup-window" class="">
   <div>
+  <div>
   <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
   <img src="${prop[idx].image}" alt="project" class="stretch project-img">
+  </div>
   <div class="flex-column">
   <h2>${prop[idx].name}</h2>
   <ul class="flex">
@@ -107,7 +109,7 @@ function createPopup(idx, prop) {
 function dltbtn(dbtn) {
   dbtn.addEventListener('click', (e) => {
     document.body.classList.remove('no-scroll');
-    e.target.parentElement.parentElement.remove();
+    e.target.parentElement.parentElement.parentElement.remove();
   });
 }
 
