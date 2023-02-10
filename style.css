@@ -432,12 +432,11 @@ footer .hr {
 .close-menu-btn {
   z-index: 2;
   display: flex;
-  margin: 10px;
   width: 30px;
   height: 30px;
   position: absolute;
-  right: -80px;
-  top: 0;
+  right: -50px;
+  top: -10px;
 }
 
 #popup-window #popup-btn {
@@ -631,7 +630,8 @@ footer .hr {
 
   .container-grid {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     justify-content: space-between;
     width: 85%;
     margin: auto;
@@ -640,7 +640,14 @@ footer .hr {
   .project-list {
     width: 100%;
     height: 615px;
+    margin-bottom: 0;
     box-shadow: 5px -3px 18px -5px grey;
+  }
+
+  .project-list:hover {
+    transform: scale(1.03);
+    position: relative;
+    transition: all 0.5s ease;
   }
 
   #popup-window h2 {
