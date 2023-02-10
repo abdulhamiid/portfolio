@@ -3,6 +3,11 @@
 /* global styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +58,6 @@ li {
   color: #008552;
 }
 
-/* button */
 .btn-bg-green {
   background-color: #02a869;
   padding: 13px 15px;
@@ -233,11 +237,17 @@ h2 {
 }
 
 /* large paragraph display */
-.p-lg {
+.p-lg,
+.p-sm {
   margin: 20px auto;
   font-size: 20px;
   line-height: 28px;
   color: #172b4d;
+}
+
+.p-sm {
+  font-size: 15px;
+  line-height: 24px;
 }
 
 /* social media platforms icons */
@@ -410,6 +420,9 @@ footer .hr {
   width: 100%;
   height: 100%;
   z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #popup-window > div {
@@ -423,8 +436,8 @@ footer .hr {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 12px;
-  top: 12px;
+  right: -80px;
+  top: 0;
 }
 
 #popup-window #popup-btn {
@@ -618,7 +631,7 @@ footer .hr {
 
   .container-grid {
     display: grid;
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
     width: 85%;
     margin: auto;
@@ -626,7 +639,8 @@ footer .hr {
 
   .project-list {
     width: 100%;
-    height: 430px;
+    height: 615px;
+    box-shadow: 5px -3px 18px -5px grey;
   }
 
   #popup-window h2 {
@@ -634,14 +648,14 @@ footer .hr {
   }
 
   .project-list img {
-    margin-bottom: -10px;
     width: 100%;
     height: 100%;
   }
 
   .project-about {
     height: 100%;
-    padding: 0;
+    padding: 10px;
+    gap: 5px 0;
   }
 
   .project-about li {
@@ -740,7 +754,7 @@ footer .hr {
     background-color: #fff;
     position: relative;
     top: 0;
-    width: 50%;
+    width: 40%;
     margin: 20px auto;
     border-radius: 5px;
     padding: 9px;
