@@ -3,11 +3,6 @@
 /* global styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-.swiper {
-  width: 100%;
-  height: auto;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -298,6 +293,10 @@ hr {
   justify-content: space-between;
 }
 
+.project-img {
+  height: 250px;
+}
+
 .project-list img {
   width: 100%;
   height: 40%;
@@ -423,6 +422,8 @@ footer .hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #popup-window > div {
@@ -435,8 +436,8 @@ footer .hr {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: -50px;
-  top: -10px;
+  right: 0;
+  top: -40px;
 }
 
 #popup-window #popup-btn {
@@ -800,6 +801,11 @@ footer .hr {
     color: #fff;
   }
 
+  .close-menu-btn {
+    right: -50px;
+    top: -10px;
+  }
+  
   .close-menu-btn:hover {
     cursor: pointer;
   }
