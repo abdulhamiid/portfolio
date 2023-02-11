@@ -284,6 +284,18 @@ hr {
   grid-gap: 20px 0;
 }
 
+#work-section h2 {
+  margin-top: 70px;
+}
+
+#contact-me h2 {
+  margin-top: 75px;
+}
+
+#my-info h2{
+  margin-top: 40px;
+}
+
 .project-list {
   height: 60%;
   background-color: #ebf0ee;
@@ -623,7 +635,12 @@ footer .hr {
 
   #work-section h2 {
     margin-bottom: 20px;
+    margin-top: 0;
   }
+
+  #my-info h2 {
+    margin-top: 0;
+}
 
   hr {
     display: none;
