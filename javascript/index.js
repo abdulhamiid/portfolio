@@ -51,8 +51,8 @@ const myProject = [{
 }, {
   id: 1,
   name: 'GymFit',
-  description: 'GymFit is a web application that allows users to view and reserve a fitness activity, i.e. Yoga class, Gym e.t.c. A user can reserve multiple fitness activities and a fitness activity can have multiple reservations on separate dates.',
-  technologies: ['HTML', 'Bootstrap', 'Ract', 'Ruby on rails'],
+  description: 'GymFit is a web application that allows users to view and reserve multiple fitness activities and a fitness activity can have multiple reservations on separate dates.',
+  technologies: ['Bootstrap','React', 'Ruby on rails'],
   source: 'https://github.com/abdulhamiid/final-capstone-back-end',
   image: 'img/gym.PNG',
   'live version': 'https://final-capstone-front-lfmdhnejp-developerwaleed.vercel.app/',
@@ -97,7 +97,7 @@ function createPopup(idx, prop) {
     `<div id="popup-window" class="">
   <div>
   <div>
-  <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
+  <i class="bi bi-x-circle-fill"></i>
   <img src="${prop[idx].image}" alt="project" class="stretch project-img">
   </div>
   <div class="flex-column">
@@ -126,7 +126,7 @@ function dltbtn(dbtn) {
 function handleClick(e) {
   const index = e.target.id;
   createPopup(index, myProject);
-  const btnClose = document.querySelector('.close-menu-btn');
+  const btnClose = document.querySelector('.bi-x-circle-fill');
   dltbtn(btnClose);
 }
 
