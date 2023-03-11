@@ -52,7 +52,7 @@ const myProject = [{
   id: 1,
   name: 'GymFit',
   description: 'GymFit is a web application that allows users to view and reserve multiple fitness activities and a fitness activity can have multiple reservations on separate dates.',
-  technologies: ['Bootstrap','React', 'Ruby on rails'],
+  technologies: ['Bootstrap', 'React', 'Ruby on rails'],
   source: 'https://github.com/abdulhamiid/final-capstone-back-end',
   image: 'img/gym.PNG',
   'live version': 'https://final-capstone-front-lfmdhnejp-developerwaleed.vercel.app/',

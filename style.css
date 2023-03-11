@@ -292,7 +292,7 @@ hr {
   margin-top: 75px;
 }
 
-#my-info h2{
+#my-info h2 {
   margin-top: 40px;
 }
 
@@ -570,7 +570,6 @@ footer .hr {
   }
 
   .menu,
-  .btn-sm
   header h3 {
     display: none;
   }
@@ -579,8 +578,7 @@ footer .hr {
     margin: 0;
     color: #172b4d;
     font-weight: bold;
-    padding: 
-    0 20px;
+    padding: 0 20px;
   }
 
   main {
