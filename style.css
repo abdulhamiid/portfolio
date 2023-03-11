@@ -53,7 +53,6 @@ li {
   color: #008552;
 }
 
-/* button */
 .btn-bg-green {
   background-color: #02a869;
   padding: 13px 15px;
@@ -233,11 +232,17 @@ h2 {
 }
 
 /* large paragraph display */
-.p-lg {
+.p-lg,
+.p-sm {
   margin: 20px auto;
   font-size: 20px;
   line-height: 28px;
   color: #172b4d;
+}
+
+.p-sm {
+  font-size: 15px;
+  line-height: 24px;
 }
 
 /* social media platforms icons */
@@ -279,6 +284,18 @@ hr {
   grid-gap: 20px 0;
 }
 
+#work-section h2 {
+  margin-top: 70px;
+}
+
+#contact-me h2 {
+  margin-top: 75px;
+}
+
+#my-info h2 {
+  margin-top: 40px;
+}
+
 .project-list {
   height: 60%;
   background-color: #ebf0ee;
@@ -288,10 +305,18 @@ hr {
   justify-content: space-between;
 }
 
+.project-img {
+  height: 200px;
+}
+
 .project-list img {
   width: 100%;
   height: 40%;
   border-radius: 5px;
+}
+
+.project-list h3 {
+  color: #172b4d;
 }
 
 /* project info container */
@@ -318,9 +343,25 @@ hr {
   margin-top: 30px;
 }
 
+.about-card li {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+}
+
 .about-card ul,
 .project-about ul {
   flex-wrap: wrap;
+}
+
+.project-about li,
+#popup-window li {
+  font-weight: 600;
+  color: #172b4d;
+  font-size: 12px;
 }
 
 .div {
@@ -410,21 +451,28 @@ footer .hr {
   width: 100%;
   height: 100%;
   z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #popup-window > div {
   background-color: #fff;
 }
 
-.close-menu-btn {
+.bi-x-circle-fill {
   z-index: 2;
   display: flex;
-  margin: 10px;
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 12px;
-  top: 12px;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  background: floralwhite;
+  margin: 2px;
 }
 
 #popup-window #popup-btn {
@@ -450,7 +498,7 @@ footer .hr {
 
 #popup-window > div > div ul,
 #popup-window > div > div div {
-  margin: 10px 0;
+  margin: 0;
 }
 
 .btn-action {
@@ -610,6 +658,11 @@ footer .hr {
 
   #work-section h2 {
     margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  #my-info h2 {
+    margin-top: 0;
   }
 
   hr {
@@ -618,7 +671,8 @@ footer .hr {
 
   .container-grid {
     display: grid;
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     justify-content: space-between;
     width: 85%;
     margin: auto;
@@ -626,7 +680,15 @@ footer .hr {
 
   .project-list {
     width: 100%;
-    height: 430px;
+    height: 615px;
+    margin-bottom: 0;
+    box-shadow: 5px -3px 18px -5px grey;
+  }
+
+  .project-list:hover {
+    transform: scale(1.03);
+    position: relative;
+    transition: all 0.5s ease;
   }
 
   #popup-window h2 {
@@ -634,14 +696,14 @@ footer .hr {
   }
 
   .project-list img {
-    margin-bottom: -10px;
     width: 100%;
     height: 100%;
   }
 
   .project-about {
     height: 100%;
-    padding: 0;
+    padding: 10px;
+    gap: 5px 0;
   }
 
   .project-about li {
@@ -690,6 +752,7 @@ footer .hr {
   }
 
   #contact-me > div h2 {
+    margin-top: 0;
     width: 70%;
     font-size: 27px;
     line-height: 1.5;
@@ -740,15 +803,20 @@ footer .hr {
     background-color: #fff;
     position: relative;
     top: 0;
-    width: 50%;
+    width: 40%;
     margin: 20px auto;
     border-radius: 5px;
     padding: 9px;
   }
 
   .project-img {
-    height: 210px;
+    height: 250px;
     margin-bottom: 0;
+  }
+
+  #popup-window > div > div ul,
+  #popup-window > div > div div {
+    margin: 10px 0;
   }
 
   #popup-window p {
@@ -779,7 +847,12 @@ footer .hr {
     color: #fff;
   }
 
-  .close-menu-btn:hover {
+  .btn-lg {
+    right: -50px;
+    top: -10px;
+  }
+
+  .bi-x-circle-fill:hover {
     cursor: pointer;
   }
 

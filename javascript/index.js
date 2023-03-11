@@ -44,18 +44,18 @@ const myProject = [{
   id: 0,
   name: 'Conference Website',
   description: 'This project I built the home and the about page of the conference page. The template I used to create this template was originally designed by Cindy Shin in Behance.',
-  technologies: ['Html', 'saa', 'JavaScript'],
+  technologies: ['HTML', 'CSS', 'JavaScript'],
   source: 'https://github.com/abdulhamiid/capstone-project',
   image: 'img/conference-page.PNG',
   'live version': 'https://bds-conference.netlify.app',
 }, {
   id: 1,
-  name: 'Math Magicians',
-  description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, App also display random math-related quote.',
-  technologies: ['Html', 'CSS', 'React'],
-  source: 'https://github.com/abdulhamiid/calculator',
-  image: 'img/maath-magicains.jpg',
-  'live version': 'https://maths-magician-webapp.netlify.app',
+  name: 'GymFit',
+  description: 'GymFit is a web application that allows users to view and reserve multiple fitness activities and a fitness activity can have multiple reservations on separate dates.',
+  technologies: ['Bootstrap', 'React', 'Ruby on rails'],
+  source: 'https://github.com/abdulhamiid/final-capstone-back-end',
+  image: 'img/gym.PNG',
+  'live version': 'https://final-capstone-front-lfmdhnejp-developerwaleed.vercel.app/',
 }, {
   id: 2,
   name: 'Covid-19 Tracker',
@@ -66,12 +66,12 @@ const myProject = [{
   'live version': 'https://vcovid-19-tracker.netlify.app',
 }, {
   id: 3,
-  name: 'GymFit',
-  description: 'GymFit is a web application that allows users to view and reserve a fitness activity, i.e. Yoga class, Gym e.t.c. A user can reserve multiple fitness activities and a fitness activity can have multiple reservations on separate dates.',
-  technologies: ['Html', 'Bootstrap', 'Ract', 'Ruby on rails'],
-  source: 'https://github.com/abdulhamiid/final-capstone-back-end',
-  image: 'img/gym.PNG',
-  'live version': 'https://final-capstone-front-lfmdhnejp-developerwaleed.vercel.app/',
+  name: 'Math Magicians',
+  description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, App also display random math-related quote.',
+  technologies: ['HTML', 'CSS', 'React'],
+  source: 'https://github.com/abdulhamiid/calculator',
+  image: 'img/maath-magicains.jpg',
+  'live version': 'https://maths-magician-webapp.netlify.app',
 }, {
   id: 4,
   name: 'Awesome Books',
@@ -84,7 +84,7 @@ const myProject = [{
   id: 5,
   name: 'Bookstore',
   description: 'The Bookstore App is a website created to display a list of books, users can add a book and also remove selected book(s).',
-  technologies: ['React', 'Html', 'CSS'],
+  technologies: ['React', 'HTML', 'CSS'],
   source: 'https://github.com/abdulhamiid/bookstore',
   image: './img/bookstorecms.PNG',
   'live version': 'https://grand-entremet-4178eb.netlify.app/',
@@ -97,7 +97,7 @@ function createPopup(idx, prop) {
     `<div id="popup-window" class="">
   <div>
   <div>
-  <img class="close-menu-btn" src="img/Disabled2.png" alt="closemenu-btn">
+  <i class="bi bi-x-circle-fill"></i>
   <img src="${prop[idx].image}" alt="project" class="stretch project-img">
   </div>
   <div class="flex-column">
@@ -126,7 +126,7 @@ function dltbtn(dbtn) {
 function handleClick(e) {
   const index = e.target.id;
   createPopup(index, myProject);
-  const btnClose = document.querySelector('.close-menu-btn');
+  const btnClose = document.querySelector('.bi-x-circle-fill');
   dltbtn(btnClose);
 }
 
