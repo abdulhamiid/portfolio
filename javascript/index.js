@@ -118,7 +118,7 @@ function createPopup(idx, prop) {
 function dltbtn(dbtn) {
   dbtn.addEventListener('click', (e) => {
     document.body.classList.remove('no-scroll');
-    e.target.parentElement.parentElement.parentElement.remove();
+    document.querySelector('#popup-window').setAttribute('style', 'left: -2000px; transition: 0.7s ease;' )
   });
 }
 

@@ -307,6 +307,8 @@ hr {
 
 .project-img {
   height: 200px;
+  border-radius: 15px;
+  border: 1px solid #ebf0ee;
 }
 
 .project-list img {
@@ -448,6 +450,7 @@ footer .hr {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   z-index: 3;
@@ -456,6 +459,7 @@ footer .hr {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
+  transition: 14s ease;
 }
 
 #popup-window > div {
@@ -467,9 +471,10 @@ footer .hr {
   display: flex;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -15px;
+  top: -15px;
   font-size: 30px;
   background: floralwhite;
   margin: 2px;
@@ -546,6 +551,24 @@ footer .hr {
 
 .error i {
   font-size: 22px;
+}
+
+@media only screen and (min-width: 480px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    width: 90%;
+    gap: 15px;
+    margin: auto;
+  }
+
+  .project-list {
+    margin-bottom: 0;
+    width: 98%;
+    height: 580px;
+    box-shadow: 5px -3px 18px -5px grey;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -852,6 +875,10 @@ footer .hr {
     top: -10px;
   }
 
+  .bi-x-circle-fill {
+    right: -20px;
+    top: -20px;
+  }
   .bi-x-circle-fill:hover {
     cursor: pointer;
   }
