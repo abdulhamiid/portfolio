@@ -43,7 +43,7 @@ for (let i = 0; i < lis.length; i += 1) {
 const myProject = [{
   id: 0,
   name: 'Conference Website',
-  description: 'This is a responsive website about BDS common summit which is about Internation medical tourist visit in Nigeria for a whole range of dental care. The template was originally designed by Cindy Shin in Behance.',
+  description: 'This is a responsive website about BDS common summit which is about International medical tourist visit in Nigeria for a whole range of dental care. The template was originally designed by Cindy Shin in Behance.',
   technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
   source: 'https://github.com/abdulhamiid/capstone-project',
   image: 'img/bdsconference.PNG',
@@ -54,12 +54,12 @@ const myProject = [{
   description: 'GymFit is a web application that allows users to view and reserve multiple fitness activities and a fitness activity can have multiple reservations on separate dates.',
   technologies: ['Ruby on rails', 'Ruby', 'JavaScript', 'Divise', 'React'],
   source: 'https://github.com/abdulhamiid/final-capstone-back-end',
-  image: 'img/gym.PNG',
+  image: 'img/GymFit.PNG',
   'live version': 'https://final-capstone-front-lfmdhnejp-developerwaleed.vercel.app/',
 }, {
   id: 2,
   name: 'Covid-19 Tracker',
-  description: 'Covid Tracker is a web application to present the numerical data about corona virus pandemic in world, fetching the data from an API.',
+  description: 'Covid Tracker is a web application to present the numerical data about corona virus pandemic, fetching the data from an API.',
   technologies: ['React', 'Redux', 'JavaScript', 'ES6 Modules', 'Bootstrap'],
   source: 'https://github.com/abdulhamiid/covid-19',
   image: './img/covid.PNG',
@@ -70,7 +70,7 @@ const myProject = [{
   description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, App also display random math-related quote.',
   technologies: ['HTML', 'CSS', 'React'],
   source: 'https://github.com/abdulhamiid/calculator',
-  image: 'img/maath-magicains.jpg',
+  image: 'img/math-magicains.PNG',
   'live version': 'https://maths-magician-webapp.netlify.app',
 }, {
   id: 4,
@@ -86,7 +86,7 @@ const myProject = [{
   description: 'This is an Online library application that enables user to keep track of books in their library by adding to and removing books from a list, user can also check the percentage read per book.',
   technologies: ['React', 'Redux', 'HTML', 'CSS'],
   source: 'https://github.com/abdulhamiid/bookstore',
-  image: './img/bookstorecms.PNG',
+  image: './img/bookstore.PNG',
   'live version': 'https://grand-entremet-4178eb.netlify.app/',
 }];
 
@@ -107,8 +107,8 @@ function createPopup(idx, prop) {
   </ul>
   <p>${prop[idx].description}</p>
   <div class="btn-action stretch flex">
-  <button type="button" class="btn-bg-green" id="popup-btn"><a href="${prop[idx]['live version']}" target="_blank" class="flex">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></a></button>
-  <button type="button" class="btn-bg-green" id="popup-btn"><a href="${prop[idx].source}" target="_blank" class="flex source">See Source<img src="img/Vector.png" alt="github-logo"></a></button>
+  <a href="${prop[idx]['live version']}" target="_blank"><button type="button" class="btn-bg-green flex" id="popup-btn">See Live<img src="img/see-live-icon.png" alt="see-live-icon"></button></a>
+  <a href="${prop[idx].source}" target="_blank"><button type="button" class="btn-bg-green flex" id="popup-btn">See Source<img src="img/Vector.png" alt="github-logo"></button></a>
   </div>
   </div>
   </div>
