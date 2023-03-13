@@ -714,7 +714,7 @@ footer .hr {
   }
 
   .project-about {
-    padding: 0;
+    padding: 0 6px;
     padding-bottom: 15px;
     gap: 5px 0;
   }
