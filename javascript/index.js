@@ -86,7 +86,7 @@ const myProject = [{
   description: 'This is an Online library application that enables user to keep track of books in their library by adding to and removing books from a list, user can also check the percentage read per book.',
   technologies: ['React', 'Redux', 'HTML', 'CSS'],
   source: 'https://github.com/abdulhamiid/bookstore',
-  image: './img/bookstore.PNG',
+  image: './img/bookstore1.PNG',
   'live version': 'https://grand-entremet-4178eb.netlify.app/',
 }];
 
