@@ -43,26 +43,26 @@ for (let i = 0; i < lis.length; i += 1) {
 const myProject = [{
   id: 0,
   name: 'Conference Website',
-  description: 'This project I built the home and the about page of the conference page. The template I used to create this template was originally designed by Cindy Shin in Behance.',
-  technologies: ['HTML', 'CSS', 'JavaScript'],
+  description: 'This is a responsive website about BDS common summit which is about Internation medical tourist visit in Nigeria for a whole range of dental care. The template was originally designed by Cindy Shin in Behance.',
+  technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
   source: 'https://github.com/abdulhamiid/capstone-project',
-  image: 'img/conference-page.PNG',
+  image: 'img/bdsconference.PNG',
   'live version': 'https://bds-conference.netlify.app',
 }, {
   id: 1,
   name: 'GymFit',
   description: 'GymFit is a web application that allows users to view and reserve multiple fitness activities and a fitness activity can have multiple reservations on separate dates.',
-  technologies: ['Bootstrap', 'React', 'Ruby on rails'],
+  technologies: ['Ruby on rails', 'Ruby', 'JavaScript', 'Divise', 'React'],
   source: 'https://github.com/abdulhamiid/final-capstone-back-end',
   image: 'img/gym.PNG',
   'live version': 'https://final-capstone-front-lfmdhnejp-developerwaleed.vercel.app/',
 }, {
   id: 2,
   name: 'Covid-19 Tracker',
-  description: 'This project is a web application the corona virus pandemic showing the world statistics, fetching the data from an API. ',
-  technologies: ['React', 'Redux', 'Bootstrap'],
+  description: 'Covid Tracker is a web application to present the numerical data about corona virus pandemic in world, fetching the data from an API.',
+  technologies: ['React', 'Redux', 'JavaScript', 'ES6 Modules', 'Bootstrap'],
   source: 'https://github.com/abdulhamiid/covid-19',
-  image: './img/covid_tracker.PNG',
+  image: './img/covid.PNG',
   'live version': 'https://vcovid-19-tracker.netlify.app',
 }, {
   id: 3,
@@ -75,16 +75,16 @@ const myProject = [{
 }, {
   id: 4,
   name: 'Awesome Books',
-  description: 'Awesome books app is a basic website that allows users to add/remove books from a list. It is a single page app (SPA) which allow switching to different pages of the app without page load. Built with JavaScript.',
-  technologies: ['JavaScript', 'CSS', 'ES6 modules'],
+  description: 'Awesome books is a single page app (SPA) website that allows users to keep track of books in their library by adding to and removing books from a list.',
+  technologies: ['JavaScript', 'Webpack', 'CSS', 'ES6 modules'],
   source: 'https://github.com/abdulhamiid/awesome-books-es6-modules',
   image: 'img/awesome-list.PNG',
   'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
 }, {
   id: 5,
   name: 'Bookstore',
-  description: 'The Bookstore App is a website created to display a list of books, users can add a book and also remove selected book(s).',
-  technologies: ['React', 'HTML', 'CSS'],
+  description: 'This is an Online library application that enables user to keep track of books in their library by adding to and removing books from a list, user can also check the percentage read per book.',
+  technologies: ['React', 'Redux', 'HTML', 'CSS'],
   source: 'https://github.com/abdulhamiid/bookstore',
   image: './img/bookstorecms.PNG',
   'live version': 'https://grand-entremet-4178eb.netlify.app/',
@@ -116,9 +116,9 @@ function createPopup(idx, prop) {
 }
 
 function dltbtn(dbtn) {
-  dbtn.addEventListener('click', (e) => {
+  dbtn.addEventListener('click', () => {
     document.body.classList.remove('no-scroll');
-    e.target.parentElement.parentElement.parentElement.remove();
+    document.querySelector('#popup-window').setAttribute('style', 'left: -2000px; transition: 0.8s ease;');
   });
 }
 

@@ -150,7 +150,7 @@ button:active {
   top: 50px;
   left: 0;
   width: 100%;
-  height: 78%;
+  height: 100%;
   background-color: #fff;
   border-radius: 0 0 35px 35px;
   z-index: 2;
@@ -307,12 +307,14 @@ hr {
 
 .project-img {
   height: 200px;
+  border-radius: 15px;
+  border: 1px solid #ebf0ee;
 }
 
 .project-list img {
   width: 100%;
   height: 40%;
-  border-radius: 5px;
+  border-radius: 7px 7px 0 0;
 }
 
 .project-list h3 {
@@ -323,7 +325,7 @@ hr {
 .project-about {
   padding: 20px 5px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   align-self: flex-end;
   width: 100%;
   box-sizing: border-box;
@@ -448,14 +450,17 @@ footer .hr {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  z-index: 3;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  z-index: 3;
   padding: 20px;
   box-sizing: border-box;
+  overflow: auto;
 }
 
 #popup-window > div {
@@ -467,9 +472,10 @@ footer .hr {
   display: flex;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -15px;
+  top: -15px;
   font-size: 30px;
   background: floralwhite;
   margin: 2px;
@@ -548,6 +554,25 @@ footer .hr {
   font-size: 22px;
 }
 
+@media only screen and (min-width: 480px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    width: 90%;
+    gap: 15px;
+    margin: auto;
+  }
+
+  .project-list {
+    margin-bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 630px;
+    box-shadow: 5px -3px 18px -5px grey;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /* Design for desktop: */
   .header {
@@ -586,10 +611,6 @@ footer .hr {
     background-repeat: no-repeat;
     background-position: bottom left, bottom right;
     padding-bottom: 50px;
-  }
-
-  #popup-window {
-    overflow: auto;
   }
 
   /* desktop-social-media links */
@@ -678,13 +699,6 @@ footer .hr {
     margin: auto;
   }
 
-  .project-list {
-    width: 100%;
-    height: 615px;
-    margin-bottom: 0;
-    box-shadow: 5px -3px 18px -5px grey;
-  }
-
   .project-list:hover {
     transform: scale(1.03);
     position: relative;
@@ -697,12 +711,10 @@ footer .hr {
 
   .project-list img {
     width: 100%;
-    height: 100%;
   }
 
   .project-about {
-    height: 100%;
-    padding: 10px;
+    padding: 20px 10px;
     gap: 5px 0;
   }
 
@@ -804,7 +816,7 @@ footer .hr {
     position: relative;
     top: 0;
     width: 40%;
-    margin: 20px auto;
+    margin: auto;
     border-radius: 5px;
     padding: 9px;
   }
@@ -850,6 +862,11 @@ footer .hr {
   .btn-lg {
     right: -50px;
     top: -10px;
+  }
+
+  .bi-x-circle-fill {
+    right: -20px;
+    top: -20px;
   }
 
   .bi-x-circle-fill:hover {
