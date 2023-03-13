@@ -314,7 +314,7 @@ hr {
 .project-list img {
   width: 100%;
   height: 40%;
-  border-radius: 5px;
+  border-radius: 7px 7px 0 0;
 }
 
 .project-list h3 {
@@ -325,7 +325,7 @@ hr {
 .project-about {
   padding: 20px 5px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   align-self: flex-end;
   width: 100%;
   box-sizing: border-box;
@@ -453,13 +453,14 @@ footer .hr {
   right: 0;
   width: 100%;
   height: 100%;
-  z-index: 3;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  z-index: 3;
   padding: 20px;
   box-sizing: border-box;
-  transition: 14s ease;
+  overflow: auto;
 }
 
 #popup-window > div {
@@ -565,8 +566,9 @@ footer .hr {
 
   .project-list {
     margin-bottom: 0;
-    width: 98%;
-    height: 580px;
+    background-color: #fff;
+    width: 100%;
+    height: 630px;
     box-shadow: 5px -3px 18px -5px grey;
   }
 }
@@ -609,10 +611,6 @@ footer .hr {
     background-repeat: no-repeat;
     background-position: bottom left, bottom right;
     padding-bottom: 50px;
-  }
-
-  #popup-window {
-    overflow: auto;
   }
 
   /* desktop-social-media links */
@@ -701,13 +699,6 @@ footer .hr {
     margin: auto;
   }
 
-  .project-list {
-    width: 100%;
-    height: 615px;
-    margin-bottom: 0;
-    box-shadow: 5px -3px 18px -5px grey;
-  }
-
   .project-list:hover {
     transform: scale(1.03);
     position: relative;
@@ -720,12 +711,10 @@ footer .hr {
 
   .project-list img {
     width: 100%;
-    height: 100%;
   }
 
   .project-about {
-    height: 100%;
-    padding: 10px;
+    padding: 20px 10px;
     gap: 5px 0;
   }
 
@@ -827,7 +816,7 @@ footer .hr {
     position: relative;
     top: 0;
     width: 40%;
-    margin: 20px auto;
+    margin: auto;
     border-radius: 5px;
     padding: 9px;
   }
