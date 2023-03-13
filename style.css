@@ -60,7 +60,6 @@ li {
   border: 1px solid #02a869;
   border-radius: 5px;
   font-size: 18px;
-  margin-top: 20px;
 }
 
 .btn-bg-green:hover {
@@ -306,14 +305,14 @@ hr {
 }
 
 .project-img {
-  height: 200px;
+  height: auto;
   border-radius: 15px;
   border: 1px solid #ebf0ee;
 }
 
 .project-list img {
   width: 100%;
-  height: 40%;
+  height: auto;
   border-radius: 7px 7px 0 0;
 }
 
@@ -329,6 +328,10 @@ hr {
   align-self: flex-end;
   width: 100%;
   box-sizing: border-box;
+}
+
+.project-about button {
+  margin-top: 20px;
 }
 
 .project-about:first-child {
@@ -502,9 +505,12 @@ footer .hr {
   color: #344563;
 }
 
-#popup-window > div > div ul,
-#popup-window > div > div div {
+#popup-window > div > div ul {
   margin: 0;
+}
+
+#popup-window > div > div div {
+  margin: 20px 0;
 }
 
 .btn-action {
@@ -520,7 +526,7 @@ footer .hr {
   background-color: #008552;
 }
 
-#popup-window button a {
+#popup-window a button{
   gap: 5px;
   font-size: 14px;
   color: #fff;
@@ -564,11 +570,15 @@ footer .hr {
     margin: auto;
   }
 
+  #popup-window > div {
+    width: 80%;
+  }
+
   .project-list {
     margin-bottom: 0;
     background-color: #fff;
     width: 100%;
-    height: 630px;
+    min-height: 560px;
     box-shadow: 5px -3px 18px -5px grey;
   }
 }
@@ -709,12 +719,9 @@ footer .hr {
     font-size: 35px;
   }
 
-  .project-list img {
-    width: 100%;
-  }
-
   .project-about {
-    padding: 20px 10px;
+    padding: 0;
+    padding-bottom: 15px;
     gap: 5px 0;
   }
 
@@ -822,7 +829,6 @@ footer .hr {
   }
 
   .project-img {
-    height: 250px;
     margin-bottom: 0;
   }
 
