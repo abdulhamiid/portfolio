@@ -1,0 +1,51 @@
+const data = [{
+  id: 0,
+  name: 'Conference Website',
+  description: 'This is a responsive website about BDS common summit which is about International medical tourist visit in Nigeria for a whole range of dental care. The template was originally designed by Cindy Shin in Behance.',
+  technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+  source: 'https://github.com/abdulhamiid/capstone-project',
+  image: 'img/bdsconference.PNG',
+  'live version': 'https://bds-conference.netlify.app',
+}, {
+  id: 1,
+  name: 'GymFit',
+  description: 'GymFit is a web application that allows users to view and reserve multiple fitness activities and a fitness activity can have multiple reservations on separate dates.',
+  technologies: ['Ruby on rails', 'Ruby', 'JavaScript', 'Divise', 'React'],
+  source: 'https://github.com/abdulhamiid/final-capstone-back-end',
+  image: 'img/GymFit.PNG',
+  'live version': 'https://final-capstone-front-lfmdhnejp-developerwaleed.vercel.app/',
+}, {
+  id: 2,
+  name: 'Covid-19 Tracker',
+  description: 'Covid Tracker is a web application to present the numerical data about corona virus pandemic, fetching the data from an API.',
+  technologies: ['React', 'Redux', 'JavaScript', 'ES6 Modules', 'Bootstrap'],
+  source: 'https://github.com/abdulhamiid/covid-19',
+  image: './img/covid.PNG',
+  'live version': 'https://vcovid-19-tracker.netlify.app',
+}, {
+  id: 3,
+  name: 'Math Magicians',
+  description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, App also display random math-related quote.',
+  technologies: ['HTML', 'CSS', 'React'],
+  source: 'https://github.com/abdulhamiid/calculator',
+  image: 'img/math-magicains.PNG',
+  'live version': 'https://maths-magician-webapp.netlify.app',
+}, {
+  id: 4,
+  name: 'Awesome Books',
+  description: 'Awesome books is a single page app (SPA) website that allows users to keep track of books in their library by adding to and removing books from a list.',
+  technologies: ['JavaScript', 'Webpack', 'CSS', 'ES6 modules'],
+  source: 'https://github.com/abdulhamiid/awesome-books-es6-modules',
+  image: 'img/awesome-list.PNG',
+  'live version': 'https://abdulhamiid.github.io/awesome-books-es6-modules',
+}, {
+  id: 5,
+  name: 'Bookstore',
+  description: 'This is an Online library application that enables user to keep track of books in their library by adding to and removing books from a list, user can also check the percentage read per book.',
+  technologies: ['React', 'Redux', 'HTML', 'CSS'],
+  source: 'https://github.com/abdulhamiid/bookstore',
+  image: './img/bookstore1.PNG',
+  'live version': 'https://grand-entremet-4178eb.netlify.app/',
+}];
+
+export default data;

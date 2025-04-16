@@ -5,35 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f0518f2c15.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="img/icon.jpg">
-    <!-- swiper -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.jpg">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Adio Abdulhamid's Portfolio</title>
 </head>
-<body>
-  <header class="container header">
-    <h3><a href="#">Welcome</a></h3>
+<body class="bg-[#f4f4f4] text-[#3a4a42]">
+  <header class="p-6">
+    <h3 class=""><a href="#" class="lg:hidden">Welcome</a></h3>
     <nav>
-      <div class="menu flex">
+      <div class="menu flex lg:hidden">
         <span id="openmenu"><i class="fa-solid fa-bars"></i></span>
         <span id="closemenu" class="remove"><i class="fa-sharp fa-solid fa-xmark"></i></span>
       </div>
-      <ul class="mynav nav-links flex stretch hide">
+      <ul class="flex gap-[70px] justify-center items-center font-semibold">
         <li><a href="#work-section">Portfolio</a></li>     
         <li><a href="#about-section">About</a></li>
         <li><a href="#contact-me">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main id="main-content" class="column-grid">
-    <div class="menu-bg remove"><hr class="hr-dark"></div>
-    <section id="profile">
-      <div class="about container flex-column">
-        <h1>Hey there. I'm Abdulhamid <br><span id="h1-inner-text">I am a Full-Stack developer</span></h1>
-        <p class="p-lg">I'm a creative developer who loves to work on appealing websites with a passion for User Interfaces and Experience. I love spending my time coding, creating things for the web and learning new things. Pair-programming and remote work aficionado. Fluent in multiple languages, frameworks, and technologies. Strong skills include React, Redux, JavaScript, Ruby on Rails, Figma and Animation Libraries!</p>
-        <ul class="social-media flex">
+  <main id="main-content" class="">
+    <div class="menu-bg remove"></div>
+    <section id="profile" class="pt-[150px] pb-[250px]">
+      <div class="w-3/5 mx-auto flex flex-col justify-center items-center text-center gap-4">
+        <h1 class="text-[#3a4a42] text-4xl text-center font-medium">Hey there. I'm Abdulhamid <br><span id="h1-inner-text" class="text-[#36b37e]">I am a Full-Stack developer</span></h1>
+        <p class="text-lg px-[20px] text-[#3a4a42]">I'm a creative developer who loves to work on appealing websites with a passion for User Interfaces and Experience. I love spending my time coding, creating things for the web and learning new things. Pair-programming and remote work aficionado. Fluent in multiple languages, frameworks, and technologies. Strong skills include React, Redux, JavaScript, Ruby on Rails, Figma and Animation Libraries!</p>
+        <ul class="flex justify-center items-center gap-[36px] my-[20px]">
           <li>
             <a href="https://twitter.com/abdulhamid_adio" target="_blank">
               <img src="img/twitter.png" alt="twitter">
@@ -60,37 +59,10 @@
             </a>
           </li>
         </ul>
-        <ul class="social-media-dsk">
-          <li>
-            <a href="https://github.com/abdulhamiid" target="_blank">
-              <img src="img/github.png" alt="github">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/abdulhamid-adio" target="_blank">
-              <img src="img/Linkedin-icon.png" alt="linkedin">
-            </a>
-          </li>
-          <li>
-            <a href="https://angel.co/u/adio-abduhamid-tunde" target="_blank">
-              <img src="img/angellist.png" alt="angellist">
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/abdulhamid_adio" target="_blank">
-              <img src="img/twitter.png" alt="twitter">
-            </a>
-          </li>
-          <li>
-            <a href="https://medium.com/@adioabdulhamid" target="_blank">
-              <img src="img/medium.png" alt="medium">
-            </a>
-          </li>
-        </ul>
-        <div id="img-icon"><a href="#work-section"><img src="img/Disabled.png" alt="icon-down"></a></div>
+        <div id="img-icon" class="my-[20px]"><a href="#work-section"><img src="img/Disabled.png" alt="icon-down"></a></div>
       </div>
     </section>
-    <section id="work-section" class="column-grid">
+    <!-- <section id="work-section" class="column-grid">
       <h2 class="col-span">My Recent Works</h2>
       <hr class="hr hr-green">
       <div class="container-grid">
@@ -183,95 +155,69 @@
           </div>
         </div>
       </div>
-    </section>
-    <section id="about-section" class="flex-column">
-      <div class="div">
-        <div id="my-info" class="abt-me container">
-          <h2>About me</h2>
-          <p class="p-lg">I can help you build a product and I've spent the last several months completely immersed in remote development, building web applications using Ruby on Rails, React, and JavaScript. If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+    </section> -->
+    <section id="about-section" class="flex-column my-[60px] text-[#3a4a42]">
+      <div class="w-3/5 mx-auto flex flex-col justify-center items-center text-center gap-4">
+        <div id="my-info">
+          <h2 class="text-3xl font-medium p-[40px]">About me</h2>
+          <p class="text-lg">I can help you build a product and I've spent the last several months completely immersed in remote development, building web applications using Ruby on Rails, React, and JavaScript. If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             <a href ="./resume.pdf" attributes-list download ="Resume Abdulhamid Adio">
-              <button type="button" class="btn-bg-green"><i class="fa-sharp fa-solid fa-download"></i> Get My Resume</button>
+              <button type="button" class="px-4 py-2 my-[40px] h-[40px] bg-[#36b37e] text-white rounded-full shadow bg-sky-500 hover:bg-sky-700"><i class="fa-solid fa-file-arrow-down mr-2"></i>Get My Resume</button>
             </a>
         </div>
       </div>
-      <ul class="flex-column container">
-        <li class="about-card">
-          <img src="img/icon-languages.png" alt="icon-frameworks">
-          <h3 class="font-md">Languages</h3>
-          <ul class="flex">
-            <li class="li-padding bg-light">JavaScript</li>
-            <li class="li-padding bg-light">Ruby</li>
-            <li class="li-padding bg-light">HTML</li>
-            <li class="li-padding bg-light">CSS</li>
+      <ul class="w-4/5 mx-auto grid grid-cols-3 gap-4 text-[#f4f4f4]">
+        <li class="flex flex-col gap-6 justify-center items-center py-[60px] border border-sky-100 bg-[#030713] rounded-[25px] text-center px-4">
+          <img class="w-[128px] h-[128px]" src="img/icon-languages.png" alt="icon-frameworks">
+          <h3 class="text-3xl font-semibold">Languages</h3>
+          <ul class="flex flex-wrap justify-center *:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 gap-3">
+            <li class="">JavaScript</li>
+            <li class="">Ruby</li>
+            <li class="">HTML</li>
+            <li class="">CSS</li>
           </ul>
         </li>
-        <li class="about-card">
-          <img src="img/icon-frameworks.png" alt="icon-frameworks">
-          <h3 class="font-md">Frameworks</h3>
-          <ul class="flex">
-            <li class="li-padding bg-light ">Bootstrap</li>
-            <li class="li-padding bg-light ">Ruby on rails</li>
-            <li class="li-padding bg-light ">RSpec</li>
-            <li class="li-padding bg-light ">React</li>
-            <li class="li-padding bg-light ">Capybara</li>
-            <li class="li-padding bg-light ">Selenium</li>
+        <li class="flex flex-col gap-6 justify-center items-center py-[60px] border border-sky-100 bg-[#030713] rounded-[25px] text-center px-4">
+          <img class="w-[128px] h-[128px]" src="img/icon-frameworks.png" alt="icon-frameworks">
+          <h3 class="text-3xl font-semibold">Frameworks</h3>
+          <ul class="flex flex-wrap justify-center *:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 gap-3">
+            <li class="">Bootstrap</li>
+            <li class="">Ruby on rails</li>
+            <li class="">RSpec</li>
+            <li class="">React</li>
+            <li class="">Capybara</li>
+            <li class="">Selenium</li>
           </ul>
         </li>
-        <li class="about-card">
-          <img src="img/icon-skills.png" alt="icon-frameworks">
-          <h3 class="font-md">Skills</h3>
-          <ul class="flex">
-            <li class="li-padding bg-light ">Codekit</li>
-            <li class="li-padding bg-light ">GitHub</li>
-            <li class="li-padding bg-light ">Codepen</li>
-            <li class="li-padding bg-light ">Gitlab</li>
-            <li class="li-padding bg-light ">Terminal</li>
+        <li class="flex flex-col gap-6 justify-center items-center py-[60px] border border-sky-100 bg-[#030713] rounded-[25px] text-center px-4">
+          <img class="w-[128px] h-[128px]" src="img/icon-skills.png" alt="icon-frameworks">
+          <h3 class="text-3xl font-semibold">Skills</h3>
+          <ul class="flex flex-wrap justify-center *:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 gap-3">
+            <li class="">Git</li>
+            <li class="">Codekit</li>
+            <li class="">GitHub</li>
+            <li class="">Codepen</li>
+            <li class="">Gitlab</li>
+            <li class="">Terminal</li>
           </ul>
         </li>
       </ul>
     </section>
     <section id="contact-me">
-      <div class="container flex-column">
-        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <form action="https://formspree.io/f/mjvlpyje" method="post" class="flex-column stretch">
-          <input name="name" id="name" type="text" minlength="3" maxlength="30" placeholder="Full name" class="stretch" required>
-          <input type="email" id="mail" name="email" placeholder="Email address" class="stretch" required>
-          <textarea name="message" id="msg" maxlength="500" rows="5" class="stretch" placeholder="Enter text here" required></textarea>
-          <small id="message"></small>
-          <button type="submit" class="btn-bg-green">Get in touch</button>
+      <div class="grid grid-cols-5 gap-6 w-4/5 mx-auto py-[100px]">
+        <h2 class="text-2xl font-semibold text-center col-span-2">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+        <form action="https://formspree.io/f/mjvlpyje" method="post" class="col-span-3 flex flex-col gap-4">
+          <input class="border border-1 border-sky-500 rounded-lg p-2 focus:outline-sky-500" name="name" id="name" type="text" minlength="3" maxlength="30" placeholder="Full name" class="stretch" required>
+          <input class="border border-1 border-sky-500 rounded-lg p-2 invalid:border-pink-500 invalid:text-pink-600 focus:border-sky-500 focus:outline focus:outline-sky-500 focus:invalid:border-pink-500 focus:invalid:outline-pink-500" type="email" id="mail" name="email" placeholder="Email address" class="stretch" required>
+          <!-- <small id="message" class="flex gap-2 py-3"></small> -->
+          <textarea class="border border-1 border-sky-500 rounded-lg p-2 focus:border-sky-500 focus:outline focus:outline-sky-500" name="message" id="msg" maxlength="500" rows="5" class="stretch" placeholder="Enter text here" required></textarea>
+          <button type="submit" class="px-4 py-2 h-[40px] w-[120px] bg-[#36b37e] text-white rounded-full shadow bg-sky-500 hover:bg-sky-700">Get in touch</button>
         </form>
-        <ul class="social-media flex">
-          <li>
-            <a href="https://twitter.com/abdulhamid_adio" target="_blank">
-              <img src="img/twitter.png" alt="twitter">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/abdulhamid-adio" target="_blank">
-              <img src="img/Linkedin-icon.png" alt="linkedin">
-            </a>
-          </li>
-          <li>
-            <a href="https://medium.com/@adioabdulhamid" target="_blank">
-              <img src="img/medium.png" alt="medium">
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/abdulhamiid" target="_blank">
-              <img src="img/github.png" alt="github">
-            </a>
-          </li>
-          <li>
-            <a href="https://angel.co/u/adio-abduhamid-tunde" target="_blank">
-              <img src="img/angellist.png" alt="angellist">
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
   </main>
-  <footer class="flex-column">
-    <ul class="social-media-dsk">
+  <footer class="border-t border-sky-100 bg-[#030713] py-[10px]">
+    <ul class="flex gap-[30px] w-3/5 mx-auto text-center justify-center items-center py-[20px]">
       <li>
         <a href="https://github.com/abdulhamiid" target="_blank">
           <img src="img/github.png" alt="github">
@@ -298,10 +244,9 @@
         </a>
       </li>
     </ul>
-    <a class="email-link" href="https://mail.yahoo.com" target="_blank">adioabdulhamid@yahoo.com</a>
-    <hr class="hr hr-dark">
+    <a class="lg:hidden" href="https://mail.yahoo.com" target="_blank">adioabdulhamid@yahoo.com</a>
   </footer>
-  <script src="javascript/swiper-bundle.min.js"></script>
-  <script src="javascript/index.js"></script>
+  <script src="package-lock.json"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
